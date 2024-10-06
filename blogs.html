@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap link-->
+    
+    <!-- custom css link-->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!--font-awesome lik-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!--slick css link-->
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/> -->
+    <!-- slick-theme.css- the default styling -->
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
+
+
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+
+    <title>Blogs | Scholar's IT</title>
+</head>
+<body class="bg-deep">
+  <!--Main Navigation start-->
+  <header>
+    <!-- Navbar top start-->
+    <nav class="navbar bg-body-tertiary navbar-expand-lg shadow-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" ><img src="img/scholar-it-logo.png" class="object-fit-cover brand-logo" style="height: 65px;" alt="logo"></a>
+        <button  class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="search ">
+              <form action="" role="search">
+                <div class="input-group ">
+                  <input type="search" placeholder="Search" aria-label="Search" class="form-control"  aria-describedby="search-btn">
+                  <button class="btn btn-outline-secondary" type="button" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+              </form>
+            </div>
+            <ul class="navbar-nav justify-content-end  flex-grow-1 pe-3">
+              <li class="nav-item"><a class="nav-link " aria-current="page" href="courses.html">Courses</a></li>
+              <li class="nav-item"><a class="nav-link " href="events.html">Events</a></li>
+              <li class="nav-item"><a class="nav-link active" href="community.html">Community</a></li>
+              <li class="nav-item"><a class="nav-link" href="aboutUs.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="admission.html">Admmision</a></li>
+              <li class="nav-item ms-xl-5 ms-md-3 singin"><a class="nav-link btn text-white px-3" href="singin.html">Sign In</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar top end-->
+
+    <!-- nav bottom start  -->
+    <nav id="nav-bottom" class="fixed-bottom bg-white nav-bottom" >
+      
+      <div class="container">
+        
+        <div class=" " >
+          <ul class="d-flex justify-content-between " >
+            <li class="nav-item">
+              <a class="nav-link nav-link-sm text-center " aria-current="page" href="index.html"><i class="fa-solid fa-house"></i><span class="d-block">Home</span></a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link nav-link-sm" href="courses.html"><i class="fa-solid fa-graduation-cap"></i><span class="d-block">Cource</span></a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link nav-link-sm active" href="community.html"><i class="fa-solid fa-user-group ms-3"></i><span class="d-block">Community</span></a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link nav-link-sm " href="events.html"><i class="fa-regular fa-calendar-check"></i><span class="d-block">Event</span></a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link nav-link-sm "  href="userProfile.html"><i class="fa-solid fa-user" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"></i><span class="d-block">Profile</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav bottom end  -->
+
+    <!--user Sidebar start-->
+    <!-- <nav id="sidebarMenu" class=" d-lg-block sidebar collapse">
+        <div class="position-sticky">
+            <div class="list-group list-group-flush  mt-4">
+                <div>
+                    <div class="user-photo mx-auto text-center mt-4 mb-md-5 p-3">
+                      <img src="image/profile-1.jpg" class="img-fluid rounded-circle object-fit-cover" alt="">
+                      <h5 class="text-center mt-3">Mr Jhon</h5>
+                      <p class="text-center"><small>hello@gmail.com</small></p>
+                      
+                    </div>
+                  </div>
+                  <hr class="text-light m-0 mt-4 p-0">
+
+                <a href="userProfile.html" class="nav-item  py-2 mt-3 active"><i class="fa-solid fa-chart-line   me-3"></i><span>Dashboard</span></a>
+                <a href="myOrders.html" class=" nav-item  py-2 "><i class="fa-solid fa-clock-rotate-left me-3"></i><span>My Orders</span></a>
+                <a href="myWishlist.html" class=" nav-item  py-2 "><i class="fa-regular fa-heart me-3"></i><span>My Wishlist</span></a>
+                <a href="profileSetting.html" class=" nav-item  py-2 "><i class="fa-regular fa-circle-user me-3"></i><span>My Setting</span></a>
+                <a href="index.html" class=" nav-item  py-2 "><i class="fa-solid fa-power-off me-3"></i><span>Logout</span></a>
+            </div>
+        </div>
+    </nav> -->
+    
+    <!--user Sidebar end-->
+  </header>
+  <!--Main Navigation end-->
+
+  <!--start main-->
+  <main> 
+    <!-- go to top with scroll start -->
+    <div id="progress" class="progress">
+      <span id="progress-value" class="progress-value">&#x1F815;</span>
+    </div>
+    <!-- go to top with scroll start -->
+
+    <!-- join free seminar start -->
+    <div>
+      <a href="freeSeminar.html" class="join-free-btn py-0 py-xl-1 px-2 pb-2  z-3 rounded-top">Join Free Seminar</a>
+    </div>
+    <!-- join free seminar end -->
+
+    <!--top Carousel start -->
+    <section class="community-cover ">
+        <div class="container">
+            <div class="community-wrap d-flex align-items-center">
+                <div class="">
+                    <h1>Scholar’s IT Community</h1>
+                    <p class="mt-3">Make a easy & luxary life stye as own wishes.</p>
+                    <p class="fs-2 people-qty mt-5">40,3500</p>
+                    <p class="">Connected People</p>
+                </div>
+            </div>
+        </div>
+    </section> 
+     <!--top Carousel end -->
+     <section class="community-nav mt-5">
+      <div class="container">
+          <nav class="rounded">
+              <div class="d-flex cmnt-nav rounded">
+                  <div class=" tmle-nav"><a class=" py-3 px-4 rounded-start" href="community.html">Timeline</a></div>
+                  <div class=" tmle-nav"><a class="active py-3 px-4" href="blogs.html">Blogs</a></div>
+                  <div class="ms-auto tmle-nav"><a class="rounded-end py-3 px-4" href="myProfile.html">My Profile</a></div>
+              </div>
+          </nav>
+      </div>
+   </section>
+     <!-- community nav end  -->
+
+     <section class="community mt-5">
+        <div class="container">
+            <div class="community-wrap">
+                <div class="row">
+                    <div class="col-12 col-lg-8 ">
+                        <div class="timeline">
+                            <!-- user status start -->
+                            <div class="status rounded">
+                                <ul class="nav justify-content-around pt-2 nav-pills mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link rounded-0 active" id="pills-status-tab" data-bs-toggle="pill" data-bs-target="#pills-status" type="button" role="tab" aria-controls="pills-status" aria-selected="true"><i class="fa-regular fa-pen-to-square me-2"></i>Status</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link rounded-0" id="pills-photo-tab" data-bs-toggle="pill" data-bs-target="#pills-photo" type="button" role="tab" aria-controls="pills-photo" aria-selected="false"><i class="fa-regular fa-image me-2"></i>Photo/Video</button>
+                                    </li>
+                                    <!-- <li class="nav-item" role="presentation">
+                                      <button class="nav-link rounded-0" id="pills-reviews-tab" data-bs-toggle="pill" data-bs-target="#pills-reviews" type="button" role="tab" aria-controls="pills-reviews" aria-selected="false"><i class="fa-regular fa-star-half-stroke me-2"></i>Review</button>
+                                    </li> -->
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link rounded-0" id="pills-blog-tab" data-bs-toggle="pill" data-bs-target="#pills-blog" type="button" role="tab" aria-controls="pills-blog" aria-selected="false"><i class="fa-regular fa-file-lines me-2"></i>Blog</button>
+                                    </li>
+                                  </ul>
+                                  <div class="tab-content " id="pills-tabContent">
+                                    <div class="tab-pane tap-status fade show active" id="pills-status" role="tabpanel" aria-labelledby="pills-status-tab" tabindex="0">
+                                      <form class="sts-form " action="">
+                                        <div class="">
+                                          <!-- <label for="status-input" class="form-label">Example textarea</label> -->
+                                          <textarea class="form-control px-5 border-0 pt-4" id="status-input" placeholder="Share what are you thinking!" rows="9"></textarea>
+                                          <hr class="m-0 mb-2 ">
+                                          <div class="d-flex px-5">
+                                            <div class="me-3">
+                                              <label for="sts-img" title="Photo/Video" class="form-label"><i class="fa-regular fa-image"></i></label>
+                                              <input type="file" class="form-control" id="sts-img" >
+                                            </div>
+                                            <div class="me-3">
+                                              <label for="user-tag" title="Tag People" class="form-label"><i class="fa-solid fa-user-tag"></i></label>
+                                              <input type="text" class="form-control" id="user-tag" >
+                                            </div>
+                                            <div class="">
+                                              <label for="sts-map" title="Check In" class="form-label"><i class="fa-solid fa-location-dot"></i></label>
+                                              <input type="text" class="form-control" id="sts-map" >
+                                            </div>
+                                            <button class="btn ms-auto px-4 mb-2" type="submit">Submit</button>
+                                          </div>
+                                        </div>
+                                      </form>
+                                    </div>
+                                    <div class="tab-pane tap-media fade" id="pills-photo" role="tabpanel" aria-labelledby="pills-photo-tab" tabindex="0">
+                                      <form class="media-form " action="">
+                                        <div class="">
+                                          <!-- <label for="status-input" class="form-label">Example textarea</label> -->
+                                          <textarea class="form-control px-5 border-0 pt-4" id="status-input" placeholder="Share what are you thinking!" rows="9"></textarea>
+                                          <hr class="m-0 mb-2 ">
+                                          <div class="d-flex px-5">
+                                            <div class="me-3">
+                                              <label for="sts-img" title="Photo/Video" class="form-label"><i class="fa-regular fa-image"></i></label>
+                                              <input type="file" class="form-control" id="sts-img" >
+                                            </div>
+                                            <div class="me-3">
+                                              <label for="user-tag" title="Tag People" class="form-label"><i class="fa-solid fa-user-tag"></i></label>
+                                              <input type="text" class="form-control" id="user-tag" >
+                                            </div>
+                                            <div class="">
+                                              <label for="sts-map" title="Check In" class="form-label"><i class="fa-solid fa-location-dot"></i></label>
+                                              <input type="text" class="form-control" id="sts-map" >
+                                            </div>
+                                            <button class="btn ms-auto px-4 mb-2" type="submit">Submit</button>
+                                          </div>
+                                        </div>
+                                      </form>
+                                    </div>
+                                    <!-- <div class="tab-pane fade" id="pills-reviews" role="tabpanel" aria-labelledby="pills-reviews-tab" tabindex="0">rev</div> -->
+                                    <div class="tab-pane tab-blog fade" id="pills-blog" role="tabpanel" aria-labelledby="pills-blog-tab" tabindex="0">
+                                      <form class="blog-form " action="">
+                                        <div class="">
+                                          <!-- <label for="status-input" class="form-label">Example textarea</label> -->
+                                          <textarea class="form-control px-5 border-0 pt-4" id="status-input" placeholder="Write a blog here!" rows="9"></textarea>
+                                          <hr class="m-0 mb-2 ">
+                                          <div class="d-flex px-5">
+                                            <div class="me-3">
+                                              <label for="sts-img" title="Photo/Video" class="form-label"><i class="fa-regular fa-image"></i></label>
+                                              <input type="file" class="form-control" id="sts-img" >
+                                            </div>
+                                            <div class="me-3">
+                                              <label for="user-tag" title="Tag People" class="form-label"><i class="fa-solid fa-user-tag"></i></label>
+                                              <input type="text" class="form-control" id="user-tag" >
+                                            </div>
+                                            <div class="">
+                                              <label for="sts-map" title="Check In" class="form-label"><i class="fa-solid fa-location-dot"></i></label>
+                                              <input type="text" class="form-control" id="sts-map" >
+                                            </div>
+                                            <button class="btn ms-auto px-4 mb-2" type="submit">Submit</button>
+                                          </div>
+                                        </div>
+                                      </form>
+                                    </div>
+                                  </div>
+
+                            </div>
+                            <!-- user status end -->
+
+                            <!-- feed  -->
+                            <div class="mt-4 timeline-feed">
+                              
+
+                              <div class="card mb-4 my-1 border-0 shadow-sm overflow-hidden" >
+                                <div class="d-flex justify-content-between  px-4 pt-4">
+                                  <div class="  mb-3">
+                                    <h5>Maldip Bus Story</h5>
+                                    <p><small>Abdul Barik <small class="ms-3"><i class="fa-regular fa-clock me-2"></i>24 July 2023</small></small> </p>
+                                  </div>
+                                  <div>
+                                    <i class="fa-solid fa-ellipsis" data-bs-toggle="collapse" data-bs-target="#timeline-action2" type="button"></i>
+                                  </div>
+                                </div>
+
+                                <div>
+                                  <img src="img/tour 1.jpg" class="card-img-top rounded-0 " alt="...">
+                                  <p class="my-3 px-4  text-style">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolorem perspiciatis amet aliquid itaque iure? Lorem, ipsum dolor sit amet <br><br> consectetur adipisicing elit. Nostrum, ullam ex! Inventore nisi sapiente, reiciendis nobis doloremque nulla nihil quis enim amet alias, unde laudantium accusamus officiis consequatur, eaque odit!
+                                  </p>
+                                  <button class="ms-4 btn p-0 bg-white text-dark"><small>See More</small></button>
+                                </div>
+                                <div class="card-body p-4 pb-3">
+                                  <div class="timeline-actvy d-flex">
+                                    <div class="me-5 total-react"><small class="ms-2">&#128077;&#128154; 27</small></div>
+                                    <div class="ms-auto"><small>10 Comments</small></div>
+                                    <div class="ms-5"><small>4 Share</small></div>
+                                  </div>
+                                  <hr class="mt-2">
+                                  <div class="timeline-actvy d-flex">
+                                    <div data-bs-toggle="collapse" data-bs-target="#react-box" type="button" class="me-5 react-btn"><small><i class="fa-regular fa-heart me-2"></i>React</small></div>
+                                    <div ><small data-bs-toggle="collapse" data-bs-target="#comment-box" type="button"><i class="fa-regular fa-comment me-2"></i>Comment</small></div>
+                                    <div class="ms-5"><small><i class="fa-solid fa-share-nodes me-2 "></i>Share</small></div>
+                                  </div>
+                                  <div id="react-box" class="react-box  collapse border rounded">
+                                    <span>&#128077;</span> <span>&#128154;</span> <span>&#129505;</span> <span>&#128512;</span>  <span>&#128525;</span> <span>&#128531;</span>
+                                  </div>
+                                  <div id="comment-box" class="comment-box collapse mt-1 px-2 rounded">
+                                    <form action="">
+                                      <div class="mb-3">
+                                        <!-- <label for="comment" class="form-label">Example textarea</label> -->
+                                        <textarea class="form-control border-0" id="comment" placeholder="Write a comment" rows="2" required> </textarea>
+                                      </div>
+                                      <div class="d-flex justify-content-between">
+                                        <div><i class="fa-regular fa-face-smile" data-bs-toggle="collapse" data-bs-target="#emoji-box" type="button" title="Insert a emoji"></i></div>
+                                        <div><button class="border-0 rounded" type="submit"><Small>Comment</Small></button></div>
+                                      </div>
+                                    </form>
+                                    <div class="emoji-box collapse p-2 rounded" id="emoji-box">
+                                      &#128154; &#129505; &#128512;  &#128525; &#128531; &#128524;	&#128545; &#128523; &#128521; &#128522; &#128519;	 &#127904; 
+                                    </div>
+                                  </div>
+                                </div>
+                  
+                                <!--blogs action  -->
+                                <div id="timeline-action2" class="position-absolute collapse rounded border timeline-action">
+                                  <ul class="p-2  mb-0">
+                                    <li class="px-2 py-1 rounded-1"><a class=" " >Edit</a></li>
+                                    <li class="px-2 py-1 rounded-1"><a class="" href="#">Delete</a></li>
+                                    <li class="px-2 py-1 rounded-1"><a class="" href="#">Create link</a></li>
+                                    <li class="px-2 py-1 rounded-1"><a class="" href="#">Report Post</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+
+                              <div class="card mb-4 my-1 border-0 shadow-sm overflow-hidden" >
+                                <div class="d-flex justify-content-between  px-4 pt-4">
+                                  <div class="  mb-3">
+                                    <h5>Hello World</h5>
+                                    <p><small>Abdul Barik <small class="ms-3"><i class="fa-regular fa-clock me-2"></i>24 July 2023</small></small> </p>
+                                  </div>
+                                  <div>
+                                    <i class="fa-solid fa-ellipsis" data-bs-toggle="collapse" data-bs-target="#timeline-action2" type="button"></i>
+                                  </div>
+                                </div>
+
+                                <div>
+                                  <img src="img/tour 5.jpg" class="card-img-top rounded-0 " alt="...">
+                                  <p class="my-3 px-4  text-style">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolorem perspiciatis amet aliquid itaque iure? Lorem, ipsum dolor sit amet <br><br> consectetur adipisicing elit. Nostrum, ullam ex! Inventore nisi sapiente, reiciendis nobis doloremque nulla nihil quis enim amet alias, unde laudantium accusamus officiis consequatur, eaque odit!
+                                  </p>
+                                  <button class="ms-4 btn p-0 bg-white text-dark"><small>See More</small></button>
+                                </div>
+                                <div class="card-body p-4 pb-3">
+                                  <div class="timeline-actvy d-flex">
+                                    <div class="me-5 total-react"><small class="ms-2">&#128077;&#128154; 27</small></div>
+                                    <div class="ms-auto"><small>10 Comments</small></div>
+                                    <div class="ms-5"><small>4 Share</small></div>
+                                  </div>
+                                  <hr class="mt-2">
+                                  <div class="timeline-actvy d-flex">
+                                    <div data-bs-toggle="collapse" data-bs-target="#react-box" type="button" class="me-5 react-btn"><small><i class="fa-regular fa-heart me-2"></i>React</small></div>
+                                    <div ><small data-bs-toggle="collapse" data-bs-target="#comment-box" type="button"><i class="fa-regular fa-comment me-2"></i>Comment</small></div>
+                                    <div class="ms-5"><small><i class="fa-solid fa-share-nodes me-2 "></i>Share</small></div>
+                                  </div>
+                                  <div id="react-box" class="react-box  collapse border rounded">
+                                    <span>&#128077;</span> <span>&#128154;</span> <span>&#129505;</span> <span>&#128512;</span>  <span>&#128525;</span> <span>&#128531;</span>
+                                  </div>
+                                  <div id="comment-box" class="comment-box collapse mt-1 px-2 rounded">
+                                    <form action="">
+                                      <div class="mb-3">
+                                        <!-- <label for="comment" class="form-label">Example textarea</label> -->
+                                        <textarea class="form-control border-0" id="comment" placeholder="Write a comment" rows="2" required> </textarea>
+                                      </div>
+                                      <div class="d-flex justify-content-between">
+                                        <div><i class="fa-regular fa-face-smile" data-bs-toggle="collapse" data-bs-target="#emoji-box" type="button" title="Insert a emoji"></i></div>
+                                        <div><button class="border-0 rounded" type="submit"><Small>Comment</Small></button></div>
+                                      </div>
+                                    </form>
+                                    <div class="emoji-box collapse p-2 rounded" id="emoji-box">
+                                      &#128154; &#129505; &#128512;  &#128525; &#128531; &#128524;	&#128545; &#128523; &#128521; &#128522; &#128519;	 &#127904; 
+                                    </div>
+                                  </div>
+                                </div>
+                  
+                                <!--blogs action  -->
+                                <div id="timeline-action2" class="position-absolute collapse rounded border timeline-action">
+                                  <ul class="p-2  mb-0">
+                                    <li class="px-2 py-1 rounded-1"><a class=" " >Edit</a></li>
+                                    <li class="px-2 py-1 rounded-1"><a class="" href="#">Delete</a></li>
+                                    <li class="px-2 py-1 rounded-1"><a class="" href="#">Create link</a></li>
+                                    <li class="px-2 py-1 rounded-1"><a class="" href="#">Report Post</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            <!-- feed  end-->
+                        </div>
+                    </div>
+                    <div class="col-4 user-info">
+                      <div class="user-content">
+                        <div class="card comments p-3 shadow-sm border-0">
+                          <div class="d-flex justify-content-between">
+                            <div class="">
+                              <h5>Recent Blogs</h5>
+                              <div class="u-line" style="background: #00a652; height: 2px; width: 68px;"></div>
+                            </div>
+                            <div><i class="fa-solid fa-ellipsis-vertical px-2 py-1" data-bs-toggle="collapse" data-bs-target="#blogs-action" type="button"></i></div>
+                          </div>
+  
+                          <div class="mt-4 overflow-y-scroll" style="height: 44rem;">
+                            <div class="card border-0 mb-3" >
+                              <div class="row g-0">
+                                <div class="col-md-4">
+                                  <a href="#"><img src="img/tour 1.jpg" class="img-fluid object-fit-cover rounded" alt="..."></a>
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body">
+                                    <a href="#"><h6 class="card-title title-style">Maldip Bus Story</h6></a>
+                                    <small>July 24, 2023</small>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card border-0 mb-3" >
+                              <div class="row g-0">
+                                <div class="col-md-4">
+                                  <a href="#"><img src="img/tour 1.jpg" class="img-fluid object-fit-cover rounded" alt="..."></a>
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body">
+                                    <a href="#"><h6 class="card-title title-style">Maldip Bus Story</h6></a>
+                                    <small>July 24, 2023</small>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card border-0 mb-3" >
+                              <div class="row g-0">
+                                <div class="col-md-4">
+                                  <a href="#"><img src="img/tour 1.jpg" class="img-fluid object-fit-cover rounded" alt="..."></a>
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body">
+                                    <a href="#"><h6 class="card-title title-style">Maldip Bus Story</h6></a>
+                                    <small>July 24, 2023</small>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card border-0 mb-3" >
+                              <div class="row g-0">
+                                <div class="col-md-4">
+                                  <a href="#"><img src="img/tour 1.jpg" class="img-fluid object-fit-cover rounded" alt="..."></a>
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body">
+                                    <a href="#"><h6 class="card-title title-style">Maldip Bus Story</h6></a>
+                                    <small>July 24, 2023</small>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card border-0 mb-3" >
+                              <div class="row g-0">
+                                <div class="col-md-4">
+                                  <a href="#"><img src="img/tour 1.jpg" class="img-fluid object-fit-cover rounded" alt="..."></a>
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body">
+                                    <a href="#"><h6 class="card-title title-style">Maldip Bus Story</h6></a>
+                                    <small>July 24, 2023</small>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card border-0 mb-3" >
+                              <div class="row g-0">
+                                <div class="col-md-4">
+                                  <a href="#"><img src="img/tour 1.jpg" class="img-fluid object-fit-cover rounded" alt="..."></a>
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body">
+                                    <a href="#"><h6 class="card-title title-style">Maldip Bus Story</h6></a>
+                                    <small>July 24, 2023</small>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card border-0 mb-3" >
+                              <div class="row g-0">
+                                <div class="col-md-4">
+                                  <a href="#"><img src="img/tour 1.jpg" class="img-fluid object-fit-cover rounded" alt="..."></a>
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body">
+                                    <a href="#"><h6 class="card-title title-style">Maldip Bus Story</h6></a>
+                                    <small>July 24, 2023</small>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          
+                          <!--blogs action  -->
+                          <div id="blogs-action" class="position-absolute collapse rounded border user-action">
+                            <ul class="p-2  mb-0">
+                              <li class="px-2 py-1 rounded-1"><a class=" " href="#" >Edit</a></li>
+                              <li class="px-2 py-1 rounded-1"><a class="" href="#">Read</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+  <!-- timeline  -->
+ 
+  
+  
+    <!--footer start-->
+    <section id="footer" class="footer">
+      <div class="container">
+        <div class="footer-wrapping ">
+            <div class="row row-cols-2 row-cols-md-4 row-cols-lg-4 gy-4 ">
+
+                <div class="boxiew col">
+                    <div class="logo" style="width:120px">
+                      <img src="img/scholar-it-logo-light.png" class="img-fluid" alt="Scholar's IT logo">
+                    </div>
+        
+                    <div class="contact-info">
+                      
+                      <div class="mb-2"><a href="Tel: 123-456-7890"><i class="fa-solid fa-phone"></i>+88 01721-XXXXXX</a></div>
+                      <div class="mb-2"><a href="mailto:hello@scholarsit.com"><i class="fa-solid fa-envelope"></i>hello@scholarsit.com</a></div>
+                      <div><a href="#"><i class="pt-1 fa-sharp fa-solid fa-location-dot"></i>Feroza Tower, 8th Floor, DIT Road, Malibagh Chowdhurypara, Dhaka.</a> </div>
+                      
+                    </div>
+                </div>
+
+                <div class="quick-link col">
+                    <div><h5>Quick Link</h5></div>
+                    <div class="info-link">
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>About Us</a></div>
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Privacy Policy</a></div>
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Terms & Conditions</a></div>
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Community Standard</a></div>
+                    </div>
+                </div>
+
+                <div class="course-link col">
+                  <div><h5>Our Cources</h5></div>
+                  <div class="info-link">
+                    <div><a href="#"><i class="fa-solid fa-angle-right"></i>Digital Marketing</a></div>
+                    <div><a href="#"><i class="fa-solid fa-angle-right"></i>Graphic Design</a></div>
+                    <div><a href="#"><i class="fa-solid fa-angle-right"></i>Web Design</a></div>
+                    <div><a href="#"><i class="fa-solid fa-angle-right"></i>Web Development</a></div>
+                  </div>
+                </div>
+        
+                <div class="boxiew-link col">
+                    <div><h5>Get Started</h5></div>
+                    <div class="info-link">
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Admmision</a></div>
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Community</a></div>
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Join timelines</a></div>
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Join Free Seminer</a></div>
+                    </div>
+        
+                    <div class="follow-us ">
+                      <div><h5>Follow Us</h5></div>
+                      <div class="social-link">
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+        <div class="copy-right d-flex justify-content-center pb-3"> <small>Copyright © 2023 Scholar's IT || All right reserved</small></div>
+      </div>
+
+    </section>
+    <!--footer end-->
+
+  </main>
+  <!--end main-->
+
+
+
+    <!--custom js link-->
+    <script src="js/main.js"></script>
+
+    <!--Bootstrap link-->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+
+    <!--slick js link-->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+      
+
+    <script src="js/jquery_3.7.0_jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+
+
+    </body>
+</html>

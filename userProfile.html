@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap link-->
+    
+    <!-- custom css link-->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!--font-awesome lik-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!--slick css link-->
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/> -->
+    <!-- slick-theme.css- the default styling -->
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
+
+
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+
+    <title>User Profile | Scholar's IT</title>
+</head>
+<body>
+  <!--Main Navigation start-->
+  <header>
+    <!-- Navbar top start-->
+    <nav class="navbar bg-body-tertiary navbar-expand-lg shadow-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" ><img src="img/scholar-it-logo.png" class="object-fit-cover brand-logo" style="height: 65px;" alt="logo"></a>
+        <button  class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="search ">
+              <form action="" role="search">
+                <div class="input-group ">
+                  <input type="search" placeholder="Search" aria-label="Search" class="form-control"  aria-describedby="search-btn">
+                  <button class="btn btn-outline-secondary" type="button" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+              </form>
+            </div>
+            <ul class="navbar-nav justify-content-end  flex-grow-1 pe-3">
+              <li class="nav-item"><a class="nav-link " aria-current="page" href="courses.html">Courses</a></li>
+              <li class="nav-item"><a class="nav-link " href="events.html">Events</a></li>
+              <li class="nav-item"><a class="nav-link " href="community.html">Community</a></li>
+              <li class="nav-item"><a class="nav-link active" href="aboutUs.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link " href="admission.html">Admmision</a></li>
+              <li class="nav-item ms-xl-5 ms-md-3 singin"><a class="nav-link btn text-white px-3" href="singin.html">Sign In</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar top end-->
+
+    <!-- nav bottom start  -->
+    <nav id="nav-bottom" class="fixed-bottom bg-white nav-bottom" >
+      
+      <div class="container">
+        
+        <div class=" " >
+          <ul class="d-flex justify-content-between " >
+            <li class="nav-item">
+              <a class="nav-link nav-link-sm text-center " aria-current="page" href="index.html"><i class="fa-solid fa-house"></i><span class="d-block">Home</span></a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link nav-link-sm" href="courses.html"><i class="fa-solid fa-graduation-cap"></i><span class="d-block">Cource</span></a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link nav-link-sm " href="community.html"><i class="fa-solid fa-user-group ms-3"></i><span class="d-block">Community</span></a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link nav-link-sm " href="events.html"><i class="fa-regular fa-calendar-check"></i><span class="d-block">Event</span></a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link nav-link-sm "  href="userProfile.html"><i class="fa-solid fa-user" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"></i><span class="d-block">Profile</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav bottom end  -->
+
+    <!--user Sidebar start-->
+    <!--user Sidebar start-->
+    <nav id="sidebarMenu" class=" d-lg-block sidebar collapse">
+        <div class="position-sticky">
+            <div class="list-group list-group-flush  mt-4">
+                <div>
+                    <div class="user-photo mx-auto text-center mt-4 mb-md-5 p-3">
+                      <img src="img/profile-1.jpg" class="img-fluid rounded-circle object-fit-cover" alt="">
+                      <h5 class="text-center mt-3">Mr Jhon</h5>
+                      <p class="text-center"><small>hello@gmail.com</small></p>
+                      
+                    </div>
+                  </div>
+                  <hr class="text-light m-0 mt-4 p-0">
+
+                <a href="userProfile.html" class="nav-item  py-2 mt-3 "><i class="fa-solid fa-chart-line   me-3"></i><span>Dashboard</span></a>
+                <a href="myOrders.html" class=" nav-item  py-2 "><i class="fa-solid fa-clock-rotate-left me-3"></i><span>My Orders</span></a>
+                <a href="myWishlist.html" class=" nav-item  py-2 "><i class="fa-regular fa-heart me-3"></i><span>My Wishlist</span></a>
+                <a href="profileSetting.html" class=" nav-item  py-2 active"><i class="fa-regular fa-circle-user me-3"></i><span>My Setting</span></a>
+                <a href="index.html" class=" nav-item  py-2 "><i class="fa-solid fa-power-off me-3"></i><span>Logout</span></a>
+            </div>
+        </div>
+    </nav>
+    <!--user Sidebar end-->
+    
+    <!--user Sidebar end-->
+  </header>
+  <!--Main Navigation end-->
+
+  <!--start main-->
+  <main> 
+    <!-- go to top with scroll start -->
+    <div id="progress" class="progress">
+      <span id="progress-value" class="progress-value">&#x1F815;</span>
+    </div>
+    <!-- go to top with scroll start -->
+
+    <section class="user-profile profile-setting">
+            <div class="container">
+                <div class="profile-wrap">
+                    <div class="user-setting">
+                        <h3>My Profile</h3>
+                        <div class="profile-detail">
+                          <div class="row row-cols-1 row-cols-md-2 g-4 mt-5">
+                            <div class="col">
+                              <h5 class="rounded">Profile Detail</h5>
+                              <div class="mt-3">
+                                <form action="">
+                                  <img src="img/profile-1.jpg" class="img-fluid rounded object-fit-cover" alt="" style="width: 18rem; height: 18rem;">
+                                  <div class="mb-3 row ">
+                                    <div class="col">
+                                      <label for="upload" class="form-label bg-white text-center py-2 mt-3 rounded" style="width: 18rem;"><i class="fa-solid fa-upload me-3"></i>Upload Photo</label>
+                                      <input style="display: none;" type="file" class="form-control" id="upload" placeholder="" aria-describedby="uploadHelp">
+                                    </div>
+                                  </div>
+  
+                                  <div class="mb-3 row ">
+                                    <div class="col">
+                                      <label for="your-name" class="form-label">Your Name<span class="required text-danger">*</span></label>
+                                      <input type="text" class="form-control" id="your-name" placeholder="Your name" aria-describedby="nameHelp" required>
+                                    </div>
+                                  </div>
+  
+                                  <div class="mb-3 row">
+                                    <div class="col">
+                                      <label for="y-mobile" class="form-label">Mobile<span class="required text-danger">*</span></label>
+                                      <input type="number" class="form-control" id="y-mobile" placeholder="Mobile Number" aria-describedby="mobileHelp" required>
+                                    </div>
+                                  </div>
+      
+                                  <div class="mb-3 row">
+                                    <div class="col">
+                                      <label for="y-mail" class="form-label">Email</label>
+                                      <input type="email" class="form-control" id="y-mail" placeholder="Mail Address" aria-describedby="mailHelp">
+                                    </div>
+                                  </div>
+      
+                                  <div class="mb-3 row">
+                                    <div class="col">
+                                      <label for="y-address" class="form-label">Address</label>
+                                      <input type="text" class="form-control" id="y-address" placeholder="Your Address" aria-describedby="addressHelp">
+                                    </div>
+                                  </div>
+  
+                                  <div class="mb-3 row ">
+                                    <div class="col">
+                                      <label for="your-city" class="form-label">City</label>
+                                      <select class="form-select" aria-label="Default select" id="your-city" >
+                                          <option selected>Select</option>
+                                          <option value="1">Dhaka</option>
+                                          <option value="2">New Delhi</option>
+                                          <option value="3">Chattogram</option>
+                                      </select>
+                                    </div>
+                                    <div class="col">
+                                        <label for="your-country" class="form-label">Country</label>
+                                        <select class="form-select" aria-label="Default select" id="your-country">
+                                            <option selected>Select</option>
+                                            <option value="2">India</option>
+                                            <option value="1">Bangladesh</option>
+                                        </select>
+                                    </div>
+                                </div>
+  
+                                <button type="submit" class="btn border-0">Save</button>
+  
+                                </form>
+                              </div>
+                            </div>
+  
+                            <div class="col">
+                              <h5 class="rounded">Change Password</h5>
+                              <form action="" class="mt-4">
+                                <div class="mb-3 row">
+                                  <div class="col">
+                                    <label for="current-pass" class="form-label">Current Password<span class="required text-danger">*</span></label>
+                                    <input type="password" class="form-control" id="current-pass"  aria-describedby="passHelp" required>
+                                  </div>
+                                </div>
+  
+                                <div class="mb-3 row">
+                                  <div class="col">
+                                    <label for="new-pass" class="form-label">New Password<span class="required text-danger">*</span></label>
+                                    <input type="password" class="form-control" id="new-pass"  aria-describedby="passHelp" required>
+                                  </div>
+                                </div>
+  
+                                <div class="mb-3 row">
+                                  <div class="col">
+                                    <label for="confirm-pass" class="form-label">Confirm New Password<span class="required text-danger">*</span></label>
+                                    <input type="password" class="form-control" id="confirm-pass"  aria-describedby="passHelp" required>
+                                  </div>
+                                </div>
+  
+                                <button type="submit" class="btn border-0">Submit</button>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                </div>
+            </div>
+        </section>
+   
+
+  </main>
+  <!--end main-->
+
+
+
+    <!--custom js link-->
+    <script src="js/main.js"></script>
+
+    <!--Bootstrap link-->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+
+    <!--slick js link-->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+      
+
+    <script src="js/jquery_3.7.0_jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+
+
+    </body>
+</html>

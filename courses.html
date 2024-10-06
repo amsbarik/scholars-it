@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap link-->
+    
+    <!-- custom css link-->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!--font-awesome lik-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!--slick css link-->
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/> -->
+    <!-- slick-theme.css- the default styling -->
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
+
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+
+    <title>Courses | Scholar's IT</title>
+</head>
+<body>
+  <!--Main Navigation start-->
+  <header>
+    <!-- Navbar top start-->
+    <nav class="navbar bg-body-tertiary navbar-expand-lg shadow-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" ><img src="img/scholar-it-logo.png" class="object-fit-cover brand-logo" style="height: 65px;" alt="logo"></a>
+        <button  class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="search ">
+              <form action="" role="search">
+                <div class="input-group ">
+                  <input type="search" placeholder="Search" aria-label="Search" class="form-control"  aria-describedby="search-btn">
+                  <button class="btn btn-outline-secondary" type="button" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+              </form>
+            </div>
+            <ul class="navbar-nav justify-content-end  flex-grow-1 pe-3">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="courses.html">Courses</a></li>
+              <li class="nav-item"><a class="nav-link " href="events.html">Events</a></li>
+              <li class="nav-item"><a class="nav-link " href="community.html">Community</a></li>
+              <li class="nav-item"><a class="nav-link" href="aboutUs.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="admission.html">Admmision</a></li>
+              <li class="nav-item ms-xl-5 ms-md-3 singin"><a class="nav-link btn text-white px-3" href="singin.html">Sign In</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar top end-->
+
+    <!-- nav bottom start  -->
+    <nav id="nav-bottom" class="fixed-bottom bg-white nav-bottom" >
+      
+      <div class="container">
+        
+        <div class=" " >
+          <ul class="d-flex justify-content-between " >
+            <li class="nav-item">
+              <a class="nav-link nav-link-sm text-center " aria-current="page" href="index.html"><i class="fa-solid fa-house"></i><span class="d-block">Home</span></a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link nav-link-sm active" href="courses.html"><i class="fa-solid fa-graduation-cap"></i><span class="d-block">Cource</span></a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link nav-link-sm " href="community.html"><i class="fa-solid fa-user-group ms-3"></i><span class="d-block">Community</span></a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link nav-link-sm " href="events.html"><i class="fa-regular fa-calendar-check"></i><span class="d-block">Event</span></a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link nav-link-sm "  href="userProfile.html"><i class="fa-solid fa-user" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"></i><span class="d-block">Profile</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav bottom end  -->
+
+    <!--user Sidebar start-->
+    <!-- <nav id="sidebarMenu" class=" d-lg-block sidebar collapse">
+        <div class="position-sticky">
+            <div class="list-group list-group-flush  mt-4">
+                <div>
+                    <div class="user-photo mx-auto text-center mt-4 mb-md-5 p-3">
+                      <img src="image/profile-1.jpg" class="img-fluid rounded-circle object-fit-cover" alt="">
+                      <h5 class="text-center mt-3">Mr Jhon</h5>
+                      <p class="text-center"><small>hello@gmail.com</small></p>
+                      
+                    </div>
+                  </div>
+                  <hr class="text-light m-0 mt-4 p-0">
+
+                <a href="userProfile.html" class="nav-item  py-2 mt-3 active"><i class="fa-solid fa-chart-line   me-3"></i><span>Dashboard</span></a>
+                <a href="myOrders.html" class=" nav-item  py-2 "><i class="fa-solid fa-clock-rotate-left me-3"></i><span>My Orders</span></a>
+                <a href="myWishlist.html" class=" nav-item  py-2 "><i class="fa-regular fa-heart me-3"></i><span>My Wishlist</span></a>
+                <a href="profileSetting.html" class=" nav-item  py-2 "><i class="fa-regular fa-circle-user me-3"></i><span>My Setting</span></a>
+                <a href="index.html" class=" nav-item  py-2 "><i class="fa-solid fa-power-off me-3"></i><span>Logout</span></a>
+            </div>
+        </div>
+    </nav> -->
+    
+    <!--user Sidebar end-->
+  </header>
+  <!--Main Navigation end-->
+  <!--start main-->
+  <main> 
+    <!-- go to top with scroll start -->
+    <div id="progress" class="progress">
+      <span id="progress-value" class="progress-value">&#x1F815;</span>
+    </div>
+    <!-- go to top with scroll start -->
+
+    <!-- join free seminar start -->
+    <div>
+      <a href="freeSeminar.html" class="join-free-btn py-0 py-xl-1 px-2 pb-2  z-3 rounded-top">Join Free Seminar</a>
+    </div>
+    <!-- join free seminar end -->
+
+    <!-- top cover start  -->
+    <section id="courses-cover" class="courses-cover">
+      <div class="container">
+        <div class="top-cover-wrap d-flex align-items-center" >
+          
+            <div class="row">
+              <div class="col-auto">
+                    <h1 class="fw-semibold">Our Trending Courses</h1>
+                    <div class="d-flex mt-3 review align-items-center">
+                      <h4 class=" title-style me-5 pt-1">5 Courses Available Now</h4>
+                      <div class="reviews">
+                          <a href="#"><small ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span>7k Reviews</span></small></a>
+                      </div>
+                    </div>
+                    <p class="mt-3 mt-lg-4 mt-xxl-5 text-style mb-2">700+ Students are learning on live courses now.</p>
+                    <p class="mt-0 text-style"><span class="certify">18k+</span> Students have been certified in live courses by Scholar’s IT!</p>
+                    <div class="mt-3 mt-lg-4 mt-xxl-5">
+                      <a href="freeSeminar.html"><button type="button" class="btn py-1">Join Free Seminar</button></a>
+                    </div>
+                </div>
+              <div class="col"></div>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- top cover end  -->
+
+    <!-- popular course start -->
+    <section class="facility">
+      <div class="container">
+        <div class="facility-wrap mx-auto p-4">
+          <div class="row row-cols-2 row-cols-md-4">
+            <div class="col">
+              <div class="card border-0" >
+                <div class="text-center"><img src="img/icons/1.png" class="card-img-top " alt="..."></div>
+                <div class="card-body">
+                  <h5 class="card-title title-style text-center">Trusted Content</h5>
+                  <!-- <p class="card-text text-style text-center"><small>Lorem ipsum dolor</small></p> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card border-0" >
+                <div class="text-center"><img src="img/icons/2.png" class="card-img-top " alt="..."></div>
+                <div class="card-body">
+                  <h5 class="card-title title-style text-center">Experienced Teachers</h5>
+                  <!-- <p class="card-text text-style text-center"><small>Lorem ipsum dolor</small></p> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card border-0" >
+                <div class="text-center"><img src="img/icons/3.png" class="card-img-top " alt="..."></div>
+                <div class="card-body">
+                  <h5 class="card-title title-style text-center">Lifetime Access</h5>
+                  <!-- <p class="card-text text-style text-center"><small>Lorem ipsum dolor</small></p> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card border-0" >
+                <div class="text-center"><img src="img/icons/4.png" class="card-img-top " alt="..."></div>
+                <div class="card-body">
+                  <h5 class="card-title title-style text-center">Sertification</h5>
+                  <!-- <p class="card-text text-style text-center"><small>Lorem ipsum dolor</small></p> -->
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- popular course end -->
+
+    <!-- trending course start -->
+    <section class="top-course overflow-hidden">
+      <div class="container ">
+        <div class="top-wrap">
+          <h1 class="text-center heading-style">Choose Top Courses</h1>
+          <p class="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit unde quas suscipit?</p>
+          
+          <div class="course-detail mt-3 mt-lg-4 mt-xl-5">
+              <ul class="nav justify-content-center  nav-pills mb-lg-3" id="pills-tab" role="tablist">
+                  <li class="nav-item me-4" role="presentation">
+                    <button class="nav-link border active" id="pills-live-tab" data-bs-toggle="pill" data-bs-target="#pills-live" type="button" role="tab" aria-controls="pills-live" aria-selected="true">Live Courses</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link border" id="pills-offline-tab" data-bs-toggle="pill" data-bs-target="#pills-offline" type="button" role="tab" aria-controls="pills-offline" aria-selected="false">Offline Course</button>
+                  </li>
+                  <li class="nav-item ms-4 mt-3 mt-sm-0 " role="presentation">
+                    <button class="nav-link border" id="pills-record-tab" data-bs-toggle="pill" data-bs-target="#pills-record" type="button" role="tab" aria-controls="pills-record" aria-selected="false">Record Cources</button>
+                  </li>
+                </ul>
+                <div class="tab-content mt-3 mt-lg-4 mt-xl-5" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-live" role="tabpanel" aria-labelledby="pills-live-tab" tabindex="0">
+                      <div class="trend-course-slide ">
+
+                          <div class="card my-1 border-0 shadow-sm overflow-hidden" >
+                            <img src="img/course/course-1.jpg" class="card-img-top " alt="...">
+                            <div class="card-body">
+                              <div class="d-flex justify-content-between">
+                                <div>
+                                  <h5 class="card-title title-style">Digital Marketing</h5>
+                                  <div class="reviews">
+                                    <a href="#"><small ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span>7k Reviews</span></small></a>
+                                  </div>
+                                  
+                                </div>
+                                <div class="activity ">
+                                  <div><a href="#" class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                                  <div class="mt-2"><a href="#" class="link"><i class="fa-regular fa-share-from-square"></i></a></div>
+                                </div>
+                              </div>
+                              <div class="d-flex justify-content-between align-items-center">
+                                <div class="mt-1"><p class="card-text mt-3 text-style ">25,000 Tk Only</p></div>
+                                <div class=""><a href="#" class="btn mt-4">Get Scholarship</a></div>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="card my-1 border-0 shadow-sm overflow-hidden" >
+                            <img src="img/course/course-2.jpg" class="card-img-top " alt="...">
+                            <div class="card-body">
+                              <div class="d-flex justify-content-between">
+                                <div>
+                                  <h5 class="card-title title-style">Digital Marketing</h5>
+                                  <div class="reviews">
+                                    <a href="#"><small ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span>7k Reviews</span></small></a>
+                                  </div>
+                                  
+                                </div>
+                                <div class="activity ">
+                                  <div><a href="#" class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                                  <div class="mt-2"><a href="#" class="link"><i class="fa-regular fa-share-from-square"></i></a></div>
+                                </div>
+                              </div>
+                              <div class="d-flex justify-content-between align-items-center">
+                                <div class="mt-1"><p class="card-text mt-3 text-style ">25,000 Tk Only</p></div>
+                                <div class=""><a href="#" class="btn mt-4">Get Scholarship</a></div>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="card my-1 border-0 shadow-sm overflow-hidden" >
+                            <img src="img/course/course-3.jpg" class="card-img-top " alt="...">
+                            <div class="card-body">
+                              <div class="d-flex justify-content-between">
+                                <div>
+                                  <h5 class="card-title title-style">Digital Marketing</h5>
+                                  <div class="reviews">
+                                    <a href="#"><small ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span>7k Reviews</span></small></a>
+                                  </div>
+                                  
+                                </div>
+                                <div class="activity ">
+                                  <div><a href="#" class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                                  <div class="mt-2"><a href="#" class="link"><i class="fa-regular fa-share-from-square"></i></a></div>
+                                </div>
+                              </div>
+                              <div class="d-flex justify-content-between align-items-center">
+                                <div class="mt-1"><p class="card-text mt-3 text-style ">25,000 Tk Only</p></div>
+                                <div class=""><a href="#" class="btn mt-4">Get Scholarship</a></div>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="card my-1 border-0 shadow-sm overflow-hidden" >
+                            <img src="img/course/course-2.jpg" class="card-img-top " alt="...">
+                            <div class="card-body">
+                              <div class="d-flex justify-content-between">
+                                <div>
+                                  <h5 class="card-title title-style">Digital Marketing</h5>
+                                  <div class="reviews">
+                                    <a href="#"><small ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span>7k Reviews</span></small></a>
+                                  </div>
+                                  
+                                </div>
+                                <div class="activity ">
+                                  <div><a href="#" class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                                  <div class="mt-2"><a href="#" class="link"><i class="fa-regular fa-share-from-square"></i></a></div>
+                                </div>
+                              </div>
+                              <div class="d-flex justify-content-between align-items-center">
+                                <div class="mt-1"><p class="card-text mt-3 text-style ">25,000 Tk Only</p></div>
+                                <div class=""><a href="#" class="btn mt-4">Get Scholarship</a></div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-offline" role="tabpanel" aria-labelledby="pills-offline-tab" tabindex="0">
+                      <div class="trend-course-slide ">
+
+                          <div class="card my-1 border-0 shadow-sm overflow-hidden" >
+                            <img src="img/course/course-1.jpg" class="card-img-top " alt="...">
+                            <div class="card-body">
+                              <div class="d-flex justify-content-between">
+                                <div>
+                                  <h5 class="card-title title-style">Digital Marketing</h5>
+                                  <div class="reviews">
+                                    <a href="#"><small ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span>7k Reviews</span></small></a>
+                                  </div>
+                                  
+                                </div>
+                                <div class="activity ">
+                                  <div><a href="#" class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                                  <div class="mt-2"><a href="#" class="link"><i class="fa-regular fa-share-from-square"></i></a></div>
+                                </div>
+                              </div>
+                              <div class="d-flex justify-content-between align-items-center">
+                                <div class="mt-1"><p class="card-text mt-3 text-style ">25,000 Tk Only</p></div>
+                                <div class=""><a href="#" class="btn mt-4">Get Scholarship</a></div>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="card my-1 border-0 shadow-sm overflow-hidden" >
+                            <img src="img/course/course-1.jpg" class="card-img-top " alt="...">
+                            <div class="card-body">
+                              <div class="d-flex justify-content-between">
+                                <div>
+                                  <h5 class="card-title title-style">Digital Marketing</h5>
+                                  <div class="reviews">
+                                    <a href="#"><small ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span>7k Reviews</span></small></a>
+                                  </div>
+                                  
+                                </div>
+                                <div class="activity ">
+                                  <div><a href="#" class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                                  <div class="mt-2"><a href="#" class="link"><i class="fa-regular fa-share-from-square"></i></a></div>
+                                </div>
+                              </div>
+                              <div class="d-flex justify-content-between align-items-center">
+                                <div class="mt-1"><p class="card-text mt-3 text-style ">25,000 Tk Only</p></div>
+                                <div class=""><a href="#" class="btn mt-4">Get Scholarship</a></div>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="card my-1 border-0 shadow-sm overflow-hidden" >
+                            <img src="img/course/course-1.jpg" class="card-img-top " alt="...">
+                            <div class="card-body">
+                              <div class="d-flex justify-content-between">
+                                <div>
+                                  <h5 class="card-title title-style">Digital Marketing</h5>
+                                  <div class="reviews">
+                                    <a href="#"><small ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span>7k Reviews</span></small></a>
+                                  </div>
+                                  
+                                </div>
+                                <div class="activity ">
+                                  <div><a href="#" class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                                  <div class="mt-2"><a href="#" class="link"><i class="fa-regular fa-share-from-square"></i></a></div>
+                                </div>
+                              </div>
+                              <div class="d-flex justify-content-between align-items-center">
+                                <div class="mt-1"><p class="card-text mt-3 text-style ">25,000 Tk Only</p></div>
+                                <div class=""><a href="#" class="btn mt-4">Get Scholarship</a></div>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="card my-1 border-0 shadow-sm overflow-hidden" >
+                            <img src="img/course/course-1.jpg" class="card-img-top " alt="...">
+                            <div class="card-body">
+                              <div class="d-flex justify-content-between">
+                                <div>
+                                  <h5 class="card-title title-style">Digital Marketing</h5>
+                                  <div class="reviews">
+                                    <a href="#"><small ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span>7k Reviews</span></small></a>
+                                  </div>
+                                  
+                                </div>
+                                <div class="activity ">
+                                  <div><a href="#" class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                                  <div class="mt-2"><a href="#" class="link"><i class="fa-regular fa-share-from-square"></i></a></div>
+                                </div>
+                              </div>
+                              <div class="d-flex justify-content-between align-items-center">
+                                <div class="mt-1"><p class="card-text mt-3 text-style ">25,000 Tk Only</p></div>
+                                <div class=""><a href="#" class="btn mt-4">Get Scholarship</a></div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+                  </div>
+                  <div class="tab-pane fade " id="pills-record" role="tabpanel" aria-labelledby="pills-record-tab" tabindex="0">
+                      <div class="trend-course-slide ">
+
+                          <div class="card my-1 border-0 shadow-sm overflow-hidden" >
+                            <img src="img/course/course-1.jpg" class="card-img-top " alt="...">
+                            <div class="card-body">
+                              <div class="d-flex justify-content-between">
+                                <div>
+                                  <h5 class="card-title title-style">Digital Marketing</h5>
+                                  <div class="reviews">
+                                    <a href="#"><small ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span>7k Reviews</span></small></a>
+                                  </div>
+                                  
+                                </div>
+                                <div class="activity ">
+                                  <div><a href="#" class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                                  <div class="mt-2"><a href="#" class="link"><i class="fa-regular fa-share-from-square"></i></a></div>
+                                </div>
+                              </div>
+                              <div class="d-flex justify-content-between align-items-center">
+                                <div class="mt-1"><p class="card-text mt-3 text-style ">25,000 Tk Only</p></div>
+                                <div class=""><a href="#" class="btn mt-4">Get Scholarship</a></div>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="card my-1 border-0 shadow-sm overflow-hidden" >
+                            <img src="img/course/course-1.jpg" class="card-img-top " alt="...">
+                            <div class="card-body">
+                              <div class="d-flex justify-content-between">
+                                <div>
+                                  <h5 class="card-title title-style">Digital Marketing</h5>
+                                  <div class="reviews">
+                                    <a href="#"><small ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span>7k Reviews</span></small></a>
+                                  </div>
+                                  
+                                </div>
+                                <div class="activity ">
+                                  <div><a href="#" class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                                  <div class="mt-2"><a href="#" class="link"><i class="fa-regular fa-share-from-square"></i></a></div>
+                                </div>
+                              </div>
+                              <div class="d-flex justify-content-between align-items-center">
+                                <div class="mt-1"><p class="card-text mt-3 text-style ">25,000 Tk Only</p></div>
+                                <div class=""><a href="#" class="btn mt-4">Get Scholarship</a></div>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="card my-1 border-0 shadow-sm overflow-hidden" >
+                            <img src="img/course/course-1.jpg" class="card-img-top " alt="...">
+                            <div class="card-body">
+                              <div class="d-flex justify-content-between">
+                                <div>
+                                  <h5 class="card-title title-style">Digital Marketing</h5>
+                                  <div class="reviews">
+                                    <a href="#"><small ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span>7k Reviews</span></small></a>
+                                  </div>
+                                  
+                                </div>
+                                <div class="activity ">
+                                  <div><a href="#" class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                                  <div class="mt-2"><a href="#" class="link"><i class="fa-regular fa-share-from-square"></i></a></div>
+                                </div>
+                              </div>
+                              <div class="d-flex justify-content-between align-items-center">
+                                <div class="mt-1"><p class="card-text mt-3 text-style ">25,000 Tk Only</p></div>
+                                <div class=""><a href="#" class="btn mt-4">Get Scholarship</a></div>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="card my-1 border-0 shadow-sm overflow-hidden" >
+                            <img src="img/course/course-1.jpg" class="card-img-top " alt="...">
+                            <div class="card-body">
+                              <div class="d-flex justify-content-between">
+                                <div>
+                                  <h5 class="card-title title-style">Digital Marketing</h5>
+                                  <div class="reviews">
+                                    <a href="#"><small ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span>7k Reviews</span></small></a>
+                                  </div>
+                                  
+                                </div>
+                                <div class="activity ">
+                                  <div><a href="#" class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                                  <div class="mt-2"><a href="#" class="link"><i class="fa-regular fa-share-from-square"></i></a></div>
+                                </div>
+                              </div>
+                              <div class="d-flex justify-content-between align-items-center">
+                                <div class="mt-1"><p class="card-text mt-3 text-style ">25,000 Tk Only</p></div>
+                                <div class=""><a href="#" class="btn mt-4">Get Scholarship</a></div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+                  </div>
+                </div>
+          </div>
+          
+        </div>
+      </div>
+    </section> 
+    <!-- trending course start -->
+  
+    <!-- free course start  -->
+    <section class="course free">
+      <div class="container">
+          <div class="course-wrap">
+            <div class="row row-cols-1 row-cols-lg-2 g-0 ">
+              <div class="col">
+                  <div class="d-flex align-items-center course-txt-bg">
+                      <div class="course-txt pe-4">
+                          <h4 class="text-white">Join Our Free Courses Today!</h4>
+                          <p class="mt-lg-3 text-white">Learn Something New Everyday with Scholar IT. Sed quisquam nobis numquam vitae eaque nostrum!</p>
+                          <a href="#"><button class="btn mt-3 mt-lg-5  border-0">Get Started </button></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  
+              </div>
+          </div>
+              
+          </div>
+      </div>
+      <div class=" overflow-hidden">
+        <img src="img/free-course.jpg" class="course-img object-fit-cover" alt="">
+      </div>
+    </section>
+    <!-- free course end -->
+
+    <!-- Istructors start  -->
+    <section class="istructors">
+      <div class="container">
+          <div class="istructors-wrap">
+            <h1 class="text-center heading-style text-capitalize">Our istructors</h1>
+            <p class="text-center text-style mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit unde quas suscipit?</p>
+          
+              <div class="row g-3 gx-lg-4 mt-3 mt-lg-4 row-cols-2 row-cols-md-3 row-cols-lg-4">
+                <div class="col">
+                  <div class="card border-0 shadow">
+                      <div class="text-center mt-4">
+                        <img src="img/profile-1.jpg" class="card-img-top rounded-circle" alt="...">
+                      </div>
+                      <div class="card-body ">
+                        <h5 class="card-title text-center">Mr. Jhone Dhoe</h5>
+                        <p class="card-text text-center">Digital Marketer</p>
+                        <div class="d-flex justify-content-center">
+                          <div class="d-flex justify-content-around ins-social mt-2">
+                            <a href="#" class=""><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href="#" class="rounded-1"><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="#" class="rounded-1"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="#" class="rounded-1"><i class="fa-brands fa-linkedin"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                  <div class="card border-0 shadow">
+                      <div class="text-center mt-4">
+                        <img src="img/profile-1.jpg" class="card-img-top rounded-circle" alt="...">
+                      </div>
+                      <div class="card-body ">
+                        <h5 class="card-title text-center">Mr. Jhone Dhoe</h5>
+                        <p class="card-text text-center">Digital Marketer</p>
+                        <div class="d-flex justify-content-center">
+                          <div class="d-flex justify-content-around ins-social mt-2">
+                            <a href="#" class=""><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href="#" class="rounded-1"><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="#" class="rounded-1"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="#" class="rounded-1"><i class="fa-brands fa-linkedin"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                  <div class="card border-0 shadow">
+                      <div class="text-center mt-4">
+                        <img src="img/profile-1.jpg" class="card-img-top rounded-circle" alt="...">
+                      </div>
+                      <div class="card-body ">
+                        <h5 class="card-title text-center">Mr. Jhone Dhoe</h5>
+                        <p class="card-text text-center">Digital Marketer</p>
+                        <div class="d-flex justify-content-center">
+                          <div class="d-flex justify-content-around ins-social mt-2">
+                            <a href="#" class=""><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href="#" class="rounded-1"><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="#" class="rounded-1"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="#" class="rounded-1"><i class="fa-brands fa-linkedin"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                  <div class="card border-0 shadow">
+                      <div class="text-center mt-4">
+                        <img src="img/profile-1.jpg" class="card-img-top rounded-circle" alt="...">
+                      </div>
+                      <div class="card-body ">
+                        <h5 class="card-title text-center">Mr. Jhone Dhoe</h5>
+                        <p class="card-text text-center">Digital Marketer</p>
+                        <div class="d-flex justify-content-center">
+                          <div class="d-flex justify-content-around ins-social mt-2">
+                            <a href="#" class=""><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href="#" class="rounded-1"><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="#" class="rounded-1"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="#" class="rounded-1"><i class="fa-brands fa-linkedin"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                  <div class="card border-0 shadow">
+                      <div class="text-center mt-4">
+                        <img src="img/profile-1.jpg" class="card-img-top rounded-circle" alt="...">
+                      </div>
+                      <div class="card-body ">
+                        <h5 class="card-title text-center">Mr. Jhone Dhoe</h5>
+                        <p class="card-text text-center">Digital Marketer</p>
+                        <div class="d-flex justify-content-center">
+                          <div class="d-flex justify-content-around ins-social mt-2">
+                            <a href="#" class=""><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href="#" class="rounded-1"><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="#" class="rounded-1"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="#" class="rounded-1"><i class="fa-brands fa-linkedin"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                  <div class="card border-0 shadow">
+                      <div class="text-center mt-4">
+                        <img src="img/profile-1.jpg" class="card-img-top rounded-circle" alt="...">
+                      </div>
+                      <div class="card-body ">
+                        <h5 class="card-title text-center">Mr. Jhone Dhoe</h5>
+                        <p class="card-text text-center">Digital Marketer</p>
+                        <div class="d-flex justify-content-center">
+                          <div class="d-flex justify-content-around ins-social mt-2">
+                            <a href="#" class=""><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href="#" class="rounded-1"><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="#" class="rounded-1"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="#" class="rounded-1"><i class="fa-brands fa-linkedin"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                  <div class="card border-0 shadow">
+                      <div class="text-center mt-4">
+                        <img src="img/profile-1.jpg" class="card-img-top rounded-circle" alt="...">
+                      </div>
+                      <div class="card-body ">
+                        <h5 class="card-title text-center">Mr. Jhone Dhoe</h5>
+                        <p class="card-text text-center">Digital Marketer</p>
+                        <div class="d-flex justify-content-center">
+                          <div class="d-flex justify-content-around ins-social mt-2">
+                            <a href="#" class=""><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href="#" class="rounded-1"><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="#" class="rounded-1"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="#" class="rounded-1"><i class="fa-brands fa-linkedin"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                  <div class="card border-0 shadow">
+                      <div class="text-center mt-4">
+                        <img src="img/profile-1.jpg" class="card-img-top rounded-circle" alt="...">
+                      </div>
+                      <div class="card-body ">
+                        <h5 class="card-title text-center">Mr. Jhone Dhoe</h5>
+                        <p class="card-text text-center">Digital Marketer</p>
+                        <div class="d-flex justify-content-center">
+                          <div class="d-flex justify-content-around ins-social mt-2">
+                            <a href="#" class=""><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href="#" class="rounded-1"><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="#" class="rounded-1"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="#" class="rounded-1"><i class="fa-brands fa-linkedin"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+
+      </div>
+    </section>
+    <!-- Istructors end -->
+
+
+    <!--footer start-->
+    <section id="footer" class="footer">
+      <div class="container">
+        <div class="footer-wrapping ">
+            <div class="row row-cols-2 row-cols-md-4 row-cols-lg-4 gy-4 ">
+
+                <div class="boxiew col">
+                    <div class="logo" style="width:120px">
+                      <img src="img/scholar-it-logo-light.png" class="img-fluid" alt="Scholar's IT logo">
+                    </div>
+        
+                    <div class="contact-info">
+                      
+                      <div class="mb-2"><a href="Tel: 123-456-7890"><i class="fa-solid fa-phone"></i>+88 01721-XXXXXX</a></div>
+                      <div class="mb-2"><a href="mailto:hello@scholarsit.com"><i class="fa-solid fa-envelope"></i>hello@scholarsit.com</a></div>
+                      <div><a href="#"><i class="pt-1 fa-sharp fa-solid fa-location-dot"></i>Feroza Tower, 8th Floor, DIT Road, Malibagh Chowdhurypara, Dhaka.</a> </div>
+                      
+                    </div>
+                </div>
+
+                <div class="quick-link col">
+                    <div><h5>Quick Link</h5></div>
+                    <div class="info-link">
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>About Us</a></div>
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Privacy Policy</a></div>
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Terms & Conditions</a></div>
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Community Standard</a></div>
+                    </div>
+                </div>
+
+                <div class="course-link col">
+                  <div><h5>Our Cources</h5></div>
+                  <div class="info-link">
+                    <div><a href="#"><i class="fa-solid fa-angle-right"></i>Digital Marketing</a></div>
+                    <div><a href="#"><i class="fa-solid fa-angle-right"></i>Graphic Design</a></div>
+                    <div><a href="#"><i class="fa-solid fa-angle-right"></i>Web Design</a></div>
+                    <div><a href="#"><i class="fa-solid fa-angle-right"></i>Web Development</a></div>
+                  </div>
+                </div>
+        
+                <div class="boxiew-link col">
+                    <div><h5>Get Started</h5></div>
+                    <div class="info-link">
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Admmision</a></div>
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Community</a></div>
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Join Events</a></div>
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Join Free Seminer</a></div>
+                    </div>
+        
+                    <div class="follow-us ">
+                      <div><h5>Follow Us</h5></div>
+                      <div class="social-link">
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+        <div class="copy-right d-flex justify-content-center pb-3"> <small>Copyright © 2023 Scholar's IT || All right reserved</small></div>
+      </div>
+
+    </section>
+    <!--footer end-->
+
+  </main>
+  <!--end main-->
+
+
+
+    <!--custom js link-->
+    <script src="js/main.js"></script>
+
+    <!--Bootstrap link-->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+
+    <!--slick js link-->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+      
+
+    <script src="js/jquery_3.7.0_jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+
+    <script>
+      $('.trend-course-slide').slick({
+        infinite: true,
+    slidesToShow: 3,
+    centerPadding: '20px',
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        centerPadding: '20px',
+        infinite: true,
+        dots: true
+      }
+    },
+    
+   
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    
+    
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+      });
+    </script>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,203 @@
+@use "../partials/index" as *;
+@use "../base/index" as *;
+
+
+// about cover css start
+.about-cover{
+    margin-top: $space-sec-top;
+    background-image: linear-gradient(to bottom, rgba(0, 166, 82, 0.85), rgba(0, 166, 82, .90)), url('../img/carousel-1.jpg');
+    // height: 24rem;
+    .about-wrap{
+        height: 24rem;
+        color: $color-light;
+        .btn{
+            background-color: $color-light !important;
+            color: $primary-color;
+            transition: .4s;
+            &:hover {
+                // background-color: darken($primary-color, 7%);
+                color: $title-color;
+              }
+        }
+    }
+}
+// about cover css end
+
+// mission css start
+.mission{
+    margin-top: $space-sec-xl;
+    .card{
+        // height: 11.5rem;
+        .card-img{
+            background-color: $bg-color;
+            img{
+                width: 6rem;
+            }
+        }
+        p{
+            font-size: .9rem;
+            text-align: justify;
+        }
+    }
+}
+// mission css end
+
+.success{
+    margin-top: $space-sec-xxl;
+    height: 28rem;
+    background-color: $primary-color;
+    position: relative;
+    .success-wrap{
+        .success-txt-bg{
+            height: 28rem;
+            .success-txt{
+                .btn{
+                    color: $primary-color;
+                    background-color: $color-light;
+                }
+        }
+    }
+    
+  }
+  .success-img{
+    position: absolute;
+    width: 50%;
+    height: 28rem;
+    top: 0;
+    right: 0;
+}
+}
+
+
+.team{
+    margin-top: $space-sec-xxl;
+    .team-wrap{
+      .card{
+        box-shadow: -5px -5px 10px lighten($color: $secondary-color, $amount: 80) !important;
+        border: 1px solid lighten($color: $secondary-color, $amount: 80) !important;
+        h5{
+          font-size: 1.1rem;
+        }
+        p{
+          font-size: .9rem;
+        }
+       
+        .card-body{
+            margin-top: -5.5rem;
+            .spkr-photo{
+                width: 7rem;
+                height: 7rem;
+                border: 5px solid $color-light;
+              }
+          .ins-social{
+            width: 8rem;
+            a{
+              color: lighten($color: $secondary-color, $amount: 40); 
+              font-size: 1.15rem;
+              transition: .4s;
+              &:hover{
+                color: $primary-color;
+                transform: scale(1.1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+ 
+
+  .why-best{
+    margin-top: $space-sec-xl;
+    ul{
+        li{
+            margin-bottom: 1rem;
+            i{color: $primary-color;}
+        }
+    }
+  }
+
+.office{
+    margin-top: $space-sec-lg;
+    .office-wrap{
+        background-color: $primary-color;
+        .office-view{
+            background-color: $color-light;
+            .card{
+                .title{
+                    // background-color: $color-light;
+                    width: 14rem;
+                }
+                .move{
+                    position: absolute;
+                    bottom: 2rem;
+                    right: 1rem;
+                    .compass{
+                        width: 2rem;
+                    }
+                    .zoom , button{
+                        background-color: $color-light !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+// media
+@media (max-width: 576px) {
+    .success{
+        height: 18rem;
+        .success-txt{
+            position: absolute;
+            bottom:  1rem;
+        }
+        .success-img{
+            position: absolute;
+            width: 100%;
+            height: 9rem;
+            top: 0 !important;
+            // right: 0;
+        }
+    }
+    .team{
+        margin-top: $space-sec-sm;
+        .card{
+            .card-body{
+                margin-top: -4.5rem !important;
+                .spkr-photo{
+                    width: 4rem !important;
+                    height: 4rem !important;
+                    border: 3px solid $color-light !important;
+                }
+                .card-title{
+                    font-size: .85rem;
+                }
+                .card-text {
+                    font-size: .7rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about-cover{
+        margin-top: 4.2rem;
+        .about-wrap{
+            height: 14rem;
+        }
+    }
+   .office{
+    .card{
+        .title{
+            width: 9rem !important;
+        }
+    }
+   }
+    
+}

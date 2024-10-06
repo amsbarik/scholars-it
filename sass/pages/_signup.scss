@@ -1,0 +1,54 @@
+@use "../partials/index" as *;
+@use "../base/index" as *;
+
+
+
+#signup-form{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, $primary-color, $primary-color-light   ), url(../img/signup-cover.jpg); 
+    .signup-txt{
+        height: 100vh;
+        color: $title-color-light;
+        // margin-left: 10%;
+        img{
+            position: absolute;
+            top: 2rem
+        }
+    }
+    
+    .signup-form{
+        height: 100vh;
+        background-color: $body-color;
+        
+        h3{font-size: 1.5rem;}
+        .button{
+            color: $title-color-light;
+            background-color: $primary-color;
+            // padding: 1rem 50rem;
+        }
+        .else-sign{
+            a{
+                color: $primary-color;
+                // margin-left: $space-min;
+                font-size: .9rem !important;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px){
+    .col-left{
+        display: none;
+    }
+    #signup-form{
+        background: none;
+    }
+    .signup-form{
+        padding: 1rem;
+        h3{
+            font-size: 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+
+// colors
+$primary-color: #00a652;
+$secondary-color: #131313;
+$tertiary-color: #ffffff;
+$color-light: #ffffff;
+
+$body-color: #ffffff;
+$bg-color: #f4f4f4;
+$bg-color-deep: #e6e5e5;
+  
+  
+$heading-color: $secondary-color;
+$heading-color-light: $tertiary-color;
+
+$title-color: $secondary-color;
+$title-color-light: $tertiary-color;
+
+$text-color: lighten($secondary-color, 15);
+$text-color-light: #d4d4d4;
+
+
+
+
+/////
+
+
+$primary-color-light: rgba(126, 63, 242, 0.2);
+$primary-color-deep: #013219;

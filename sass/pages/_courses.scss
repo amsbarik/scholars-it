@@ -1,0 +1,211 @@
+@use "../partials/index" as *;
+@use "../base/index" as *;
+
+
+.courses-cover{
+    margin-top: $space-sec-top;
+    background-image: url(../img/course-cover.jpg);
+    height: 30rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .container{
+      height: 100%;
+      .top-cover-wrap{
+        height: 100%;
+        h1{
+        //   font-weight: $font-bold;
+          color: $primary-color;
+        }
+        .certify{
+            color: $primary-color;
+        }
+      }
+    }
+}
+
+
+.facility{
+    margin-top: $space-sec-md;
+    .facility-wrap{
+      .card{
+        img{
+            width: 4.5rem;
+            padding-bottom: .7rem;
+            object-fit: cover;
+        }
+      }
+    }
+  }
+
+
+
+  .top-course{
+    margin-top: $space-sec-lg;
+    // padding-top: 4rem;
+    // padding-bottom: 5rem;
+    // background-color: $bg-color;
+    
+    .top-wrap{
+        .course-detail{
+            .nav{
+                .nav-link{
+                  color: $secondary-color !important;
+                }
+                .active{
+                    color: $color-light !important;
+                    background-color: $primary-color !important;
+                }
+            }
+        }
+      .trend-course-slide{
+        .card{
+          gap: 1rem !important;
+          margin: 0 .9rem;
+          img{
+            transition: .3s;
+            &:hover{
+              transform: scale(1.03);
+            }
+          }
+        }
+      }
+    }
+  
+  }
+
+
+  .course{
+    margin-top: $space-sec-xxl;
+    height: 28rem;
+    background-color: $primary-color;
+    position: relative;
+    .course-wrap{
+        .course-txt-bg{
+            height: 28rem;
+            .course-txt{
+                .btn{
+                    color: $primary-color;
+                    background-color: $color-light;
+                }
+        }
+    }
+    
+  }
+  .course-img{
+    position: absolute;
+    width: 50%;
+    height: 28rem;
+    top: 0;
+    right: 0;
+}
+}
+
+.istructors{
+  margin-top: $space-sec-xxl;
+  .istructors-wrap{
+    .card{
+      box-shadow: -5px -5px 10px lighten($color: $secondary-color, $amount: 80) !important;
+      border: 1px solid lighten($color: $secondary-color, $amount: 80) !important;
+      h5{
+        font-size: 1.1rem;
+      }
+      p{
+        font-size: .9rem;
+      }
+      img{
+        width: 6rem;
+        height: 6rem;
+        border: 2px solid $primary-color;
+      }
+      .card-body{
+        .ins-social{
+          width: 8rem;
+          a{
+            color: lighten($color: $secondary-color, $amount: 40); 
+            font-size: 1.15rem;
+            transition: .4s;
+            &:hover{
+              color: $primary-color;
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+//////////////
+@media (max-width: 576px){
+  .course{
+        height: 18rem;
+        .course-txt{
+            position: absolute;
+            bottom:  1rem;
+        }
+        .course-img{
+            position: absolute;
+            width: 100%;
+            height: 9rem;
+            top: 0 !important;
+            // right: 0;
+        }
+    }
+}
+
+@media (max-width: 768px){
+  .courses-cover{
+    margin-top: 4.2rem ;
+    height: 11rem !important;
+    .review{
+      display: none !important;
+    }
+  }
+  .facility{
+    img{
+      width: 2.5rem !important;
+      padding-bottom: .3rem !important;
+    }
+  }
+  .course{
+        height: 18rem;
+        .course-txt{
+            position: absolute;
+            bottom:  1rem;
+        }
+        .course-img{
+            position: absolute;
+            width: 100%;
+            height: 9rem;
+            top: 0 !important;
+            // right: 0;
+        }
+    }
+
+    .top-course, .facility{
+      margin-top: 1rem !important;
+    }
+    .course, .istructors, .footer{
+      margin-top: 2rem !important;
+    }
+}
+
+@media (max-width: 992px){
+  .courses-cover{
+    height: 16rem;
+  }
+  
+}
+
+@media (max-width: 1200px){
+  .courses-cover{
+    height: 20rem;
+  }
+  .top-course, .course, .istructors, .footer{
+    margin-top: 3rem;
+  }
+  
+}
+

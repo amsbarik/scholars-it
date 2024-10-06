@@ -1,0 +1,366 @@
+@use "../partials/index" as *;
+@use "../base/index" as *;
+
+
+
+.top-carousel{
+    margin-top: $space-sec-top;
+    .carousel-wrap{
+        .carousel-inner{
+            .carousel-item{
+                background-image: linear-gradient(to bottom, rgba(0, 166, 82, 0.85), rgba(0, 166, 82, .90)), url('../img/carousel-1.jpg');
+                height: 30rem;
+                .carsle-txt{
+                    color: $color-light;
+                    height: 100%;
+                }
+
+            }
+        }
+    }
+}
+
+
+.event-search-box{
+    .event-search{
+        width: 58rem;
+        background-color: $color-light;
+        margin-top: -4rem;
+        position: relative;
+        padding-top: 2.5rem !important;
+        input:focus, select:focus {
+            box-shadow: none;
+            border: 1px solid $primary-color;
+        }
+        form{
+            width: 100%;
+            .search-key{
+                width: 40% !important;
+            }
+            .search-city, .search-date{
+                width: 25%;
+            }
+            .search-btn{
+                width: 10%;
+            }
+        }
+    }
+}
+
+
+.event-ctg{
+    margin-top: $space-sec-xxl;
+    .event-ctg-wrap{
+        .card{
+            img{
+                width: 7rem;
+                // height: 10rem;
+                object-fit: cover;
+            }
+            h5{
+                transition: .4s;
+                &:hover{
+                    color: $primary-color;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+.events{
+    margin-top: $space-sec-xxl;
+    background-color: $bg-color;
+    padding-top: $space-title-xxl;
+    padding-bottom: $space-sec-xxl;
+    .events-wrap{
+        .card{
+            .seats{
+                background-color: rgba(0, 0, 0, .65);;
+                color: $color-light;
+                border: .1rem solid $color-light;
+                padding: .35rem .62rem;
+            }
+            .card-body{
+                .event-info{
+                    small{
+                        font-size: .85rem;
+                    }
+                }
+                hr{
+                    color: lighten($color: $secondary-color, $amount: 50);
+                }
+                .event-actvy{
+                    color: lighten($color: $secondary-color, $amount: 30)
+                }
+            }
+            .event-action{
+                top: 2.8rem;
+                right: 1.5rem;
+                background-color: $color-light;
+                ul{
+                    li{
+                        transition: .4s;
+                        &:hover{
+                            background-color: $bg-color;
+                            color: $title-color;
+                        }
+                        a{
+                            color: $text-color;
+                        }
+                    }
+                }
+            }
+        }
+      
+    }
+  
+  }
+
+
+.travel{
+    // margin-top: $space-sec-xxl;
+    height: 28rem;
+    background-color: $primary-color;
+    position: relative;
+    .travel-wrap{
+        .travel-txt-bg{
+            height: 28rem;
+            .travel-txt{
+                .btn{
+                    color: $primary-color;
+                    background-color: $color-light;
+                }
+        }
+    }
+    
+  }
+  .travel-img{
+    position: absolute;
+    width: 50%;
+    height: 28rem;
+    top: 0;
+    right: 0;
+}
+}
+
+.skeakers{
+    margin-top: $space-sec-xxl;
+    .skeakers-wrap{
+      .card{
+        box-shadow: -5px -5px 10px lighten($color: $secondary-color, $amount: 80) !important;
+        border: 1px solid lighten($color: $secondary-color, $amount: 80) !important;
+        h5{
+          font-size: 1.1rem;
+        }
+        p{
+          font-size: .9rem;
+        }
+       
+        .card-body{
+            margin-top: -5.5rem;
+            .spkr-photo{
+                width: 7rem;
+                height: 7rem;
+                border: 5px solid $color-light;
+              }
+          .ins-social{
+            width: 8rem;
+            a{
+              color: lighten($color: $secondary-color, $amount: 40); 
+              font-size: 1.15rem;
+              transition: .4s;
+              &:hover{
+                color: $primary-color;
+                transform: scale(1.1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+ 
+
+// media quary start
+@media (max-width: 440px){
+    .top-carousel{
+        .prev{
+            margin-left: -1.5rem;
+        }
+        .next{
+            margin-right: -1.5rem;
+        }
+    }
+}
+
+@media (max-width: 480px){
+    .weather{
+        display: none !important;
+    }
+}
+
+
+@media (max-width: 576px){
+    .top-carousel{
+        // margin-top: 4.2rem;
+        .carousel-item{
+            height: 14rem !important;
+            .wrap{
+                padding: 0 1.2rem;
+                p{
+                    display: none;
+                }
+                .conf-time{
+                    font-size: 1rem !important;
+                    span{
+                        font-size: .7rem !important;
+                    }
+                }
+            }
+        }
+        .prev, .next{
+            height: 1.2rem;
+        }
+        .prev{
+            margin-left: -1.8rem;
+        }
+        .next{
+            margin-right: -1.8rem;
+        }
+    }
+    .event-ctg{
+        margin-top: $space-sec-sm;
+        .card{
+            box-shadow: none !important;
+            img{
+                width: 3rem !important;
+            }
+            a{
+                font-size: 1rem !important;
+                margin-top: -3rem !important;
+            }
+        }
+    }
+
+    .events{
+        margin-top: $space-sec-sm;
+        padding-top: $space-sec-sm;
+        padding-bottom: $space-sec-sm;
+        .card{
+            .participant {
+                display: none !important;
+            }
+            .card-btn{
+                font-size: .8rem;
+                margin-top: -.01rem ;
+            }
+            .ticket-btn, .seats{
+                font-size: .7rem !important;
+            }
+            .ticket{left: .9rem !important}
+            .seat-btn{right: .9rem !important;}
+            .evt-hr{
+                margin: .5rem 0 !important;
+            }
+            .event-info, .event-actvy{
+                h6, i{
+                    font-size: .8rem;
+                }
+                small{
+                    font-size: .7rem !important;
+                }
+            }
+            .event-action{
+                top: 2.4rem !important;
+            }
+        }
+    }
+
+    .travel{
+        height: 18rem;
+        .travel-txt{
+            position: absolute;
+            bottom:  1rem;
+        }
+        .travel-img{
+            position: absolute;
+            width: 100%;
+            height: 9rem;
+            top: 0 !important;
+            // right: 0;
+        }
+    }
+
+    .skeakers{
+        margin-top: $space-sec-sm;
+        .card{
+            .card-body{
+                margin-top: -4.5rem !important;
+                .spkr-photo{
+                    width: 4rem !important;
+                    height: 4rem !important;
+                    border: 3px solid $color-light !important;
+                }
+                .card-title{
+                    font-size: .85rem;
+                }
+                .card-text {
+                    font-size: .7rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px){
+    .top-carousel{
+        margin-top: 4.2rem;
+    }
+    .event-search-box{
+        .event-search{
+            width: 80% !important;
+            padding-top: 1rem !important;
+            margin-top: -2rem !important;
+            form{
+                width: 100%;
+                .search-key{
+                    width: 100% !important;
+                }
+                .search-city, .search-date{
+                    width: 100%;
+                    margin-top: .5rem;
+                }
+                .search-btn{
+                    width: 100%;
+                    margin-top: .5rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .top-carousel{
+        .carousel-item{
+            .wrap{
+                padding: 0 1.2rem;
+                
+            }
+        }
+        .prev, .next{
+            height: 1.8rem;
+        }
+    }
+    .event-search-box{
+        .event-search{
+            width: 80% ;
+            .search-key{
+                width: 10rem !important;
+            }
+        }
+    }
+
+}

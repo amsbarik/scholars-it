@@ -1,0 +1,331 @@
+@use "../partials/index" as *;
+@use "../base/index" as *;
+
+
+.community-cover{
+    margin-top: $space-sec-top;
+    background-image: linear-gradient(to bottom, rgba(0, 166, 82, 0.85), rgba(0, 166, 82, .90)), url('../img/carousel-1.jpg');
+    // height: 24rem;
+    .community-wrap{
+        height: 24rem;
+        color: $color-light;
+    }
+}
+
+
+// community-nav css start
+.community-nav{
+    nav{
+        background-color: $color-light;
+        .active{
+            border-bottom: 3px solid $primary-color;
+            color: $primary-color !important;
+            font-weight: 500;
+        }
+        .cmnt-nav{
+            .tmle-nav{
+                text-align: center;
+                padding: 1rem 0;
+                
+                transition: .4s;
+                &:hover{
+                    a{
+                        color: $primary-color;
+                    }
+                }
+                a{
+                    color: $title-color ;
+                }
+            }
+        }
+        
+    }
+}
+// community-nav css end
+
+
+
+//community css start
+.community{
+    .community-wrap{
+        
+        .timeline{
+            .status{
+                background-color: $color-light;
+                
+                .nav{
+                    border-bottom: 1px solid darken($color: $bg-color, $amount: 5);
+                    .active{
+                        background: none !important;
+                        color: $title-color !important;
+                        border-bottom: 2px solid $primary-color;
+                        font-weight: 500;
+                    }
+                    
+                    .nav-link{
+                        color: lighten($color: $secondary-color, $amount: 40);
+                        // transition: .4s;
+                        &:hover{
+                            color: $title-color;
+                        }
+                    }
+                }
+                .tab-content{
+                    .tap-status{
+                        .sts-form{
+                            margin-top: -1rem;
+                            textarea:focus{
+                                box-shadow: none;
+                            }
+                            input{
+                                display: none;
+                            }
+                            label{
+                                color: $primary-color;
+                                margin-top: .4rem;
+                            }
+                        }
+                    }
+                    .tap-media{
+                        .media-form{
+                            margin-top: -1rem;
+                            textarea:focus{
+                                box-shadow: none;
+                            }
+                            input{
+                                display: none;
+                            }
+                            label{
+                                color: $primary-color;
+                                margin-top: .4rem;
+                            }
+                        }
+                    }
+                    .tab-blog{
+                        .blog-form{
+                            margin-top: -1rem;
+                            textarea:focus{
+                                box-shadow: none;
+                            }
+                            input{
+                                display: none;
+                            }
+                            label{
+                                color: $primary-color;
+                                margin-top: .4rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .timeline-feed{
+                .card{
+                    .user-info{
+                        .user-photo{
+                            width: 3.3rem; height: 3.3rem; object-fit: cover; 
+                            border: 1px solid $primary-color;
+                            padding: 2px;
+                        }
+                        .user-name{
+                            p{
+                                margin-top: -.1rem;
+                                color: lighten($color: $secondary-color, $amount: 50);
+                            }
+                        }
+                    }
+                    .card-body{
+                        .timeline-info{
+                            small{
+                                font-size: .85rem;
+                            }
+                        }
+                        hr{
+                            color: lighten($color: $secondary-color, $amount: 50);
+                        }
+                        .timeline-actvy{
+                            color: lighten($color: $secondary-color, $amount: 30);
+                            .total-react{
+                                i{color: $primary-color;}
+                            }
+                            .react-btn{
+                                &:hover{
+                                    .react-box{
+                                        // visibility: visible;
+                                    }
+                                }
+                            }
+                        }
+                        .react-box{
+                            max-width: 15rem;
+                            // display: none;
+                            position: absolute ;
+                            bottom: 2.5rem;
+                            background-color: $color-light;
+                            font-size: 1.5rem;
+                            // visibility: hidden;
+                            span{
+                                cursor: pointer;
+                                &:hover{
+                                    transform: scale(1.5);
+                                }
+                            }
+                        }
+                        .comment-box{
+                            background-color: $bg-color ;
+                            textarea{
+                                background-color: $bg-color !important;
+                            }
+                            textarea:focus{
+                                box-shadow: none;
+                            }
+                            button{
+                                background-color: $bg-color !important;
+                            }
+                            .active{
+                                display: initial;
+                            }
+                            
+                            .emoji-box{
+                                max-width: 15rem;
+                                // display: none;
+                                position: absolute;
+                                bottom: 2.5rem;
+                                background-color: $color-light;
+                            }
+
+                        }
+                    }
+                    .timeline-action{
+                        top: 2.8rem;
+                        right: 1.5rem;
+                        background-color: $color-light;
+                        ul{
+                            li{
+                                transition: .4s;
+                                font-size: .85rem;
+                                &:hover{
+                                    background-color: $bg-color;
+                                    color: $title-color;
+                                }
+                                a{
+                                    color: $text-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .user-content{
+            .user-action{
+                top: 2.8rem;
+                right: 1.5rem;
+                background-color: $color-light;
+                ul{
+                    li{
+                        transition: .4s;
+                        font-size: .85rem;
+
+                        &:hover{
+                            background-color: $bg-color;
+                            color: $title-color;
+                        }
+                        a{
+                            color: $text-color;
+                        }
+                    }
+                }
+            }
+            .user-about{
+                p{
+                    color: lighten($color: $secondary-color, $amount: 50);
+                    font-size: .85rem;
+                    margin-bottom: .5rem;
+                    span{
+                        color: lighten($color: $secondary-color, $amount: 10);
+                        a{
+                            color: lighten($color: $secondary-color, $amount: 10);
+                            transition: .4s;
+                            &:hover{
+                                color: $primary-color;
+                                i{
+                                    transform: scale(1.2);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .gallery{
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                .photo-gallery{
+                    height: 22rem;
+                    .col{
+                        height: 6rem;
+                    }
+                }
+            }
+
+            .comments{
+                img{
+                    width: 100%;
+                    height: 6rem;
+                }
+                .comment-container{
+                    height: 40rem;
+                }
+            }
+            
+        }
+    }
+}
+//community css end
+
+
+// media
+@media (max-width: 768px) {
+    .community-cover{
+        margin-top: 4.2rem;
+        .community-wrap{
+            height: 14rem;
+            .people-qty{
+                font-size: 1.1rem !important;
+            }
+        }
+    }
+    .gallery{
+        // img{
+        //     width: 100%;
+        //     height: 100%;
+        // }
+        .photo-gallery{
+            height: 19.6rem !important;
+            .col{
+                height: 6rem;
+            }
+        }
+    }
+    .comments{
+        img{
+            width: 100%;
+            height: 4rem !important;
+        }
+        .comment-container{
+            height: 14.2rem !important;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .community{
+        .user-info{
+            display: none;
+        }
+    }
+}
+

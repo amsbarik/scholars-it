@@ -1,0 +1,154 @@
+@use "../partials/index" as *;
+@use "../base/index" as *;
+
+.admission-cover{
+    margin-top: $space-sec-top;
+    background-image: linear-gradient(to bottom, rgba(0, 166, 82, 0.85), rgba(0, 166, 82, .90)), url('../img/carousel-1.jpg');
+    // height: 24rem;
+    .admission-wrap{
+        height: 24rem;
+        color: $color-light;
+        .btn{
+            background-color: $color-light !important;
+            color: $primary-color;
+            transition: .4s;
+            &:hover {
+                // background-color: darken($primary-color, 7%);
+                color: $title-color;
+              }
+        }
+    }
+}
+
+
+//admission css start
+.admission{
+    margin-top: $space-sec-xl;
+    .admission-wrap{
+
+        .admission-content{
+            p{
+                color: $text-color;
+                font-size: .85rem;
+                margin-bottom: .5rem;
+            }
+            i{color: $primary-color;}
+            .course-info{
+                .btn{
+                    background-color: $color-light;
+                    color: $primary-color;
+                    width: 11rem;
+                    border: 1px solid $primary-color;
+                }
+            }
+            .need-help{
+               a{
+                color: $text-color ;
+               }
+            }
+            
+        }
+    }
+    .admission-form{
+        input:focus, select:focus{
+            box-shadow: none !important;
+            border: 1px solid $primary-color !important;
+            outline: none !important;
+        }
+        .admission-info{
+            background-color: darken($color: $bg-color, $amount: 5);
+            padding: .8rem .85rem;
+            h5{
+                margin-top: .3rem !important;
+                position: absolute;
+            }
+            .step{
+                background-color: darken($color: $bg-color, $amount: 15);
+                padding: .4rem;
+                color: black;
+                width: 2.1rem;
+                height: 2.1rem;
+                font-size: .9rem;
+                border-radius: 50%;
+            }
+        }
+        .payment-info{
+            .nav{
+                .active{
+                    background-color: $primary-color !important;
+                    color: $color-light !important;
+                }
+                .nav-link{
+                    padding-bottom: 0rem;
+                    padding-top: .45rem;
+                    padding-left: 2.5rem;
+                    padding-right: 2.5rem;
+                    color: $title-color;
+                }
+            }
+        }
+    }
+}
+//admission css end
+
+
+
+
+
+
+
+
+
+
+
+
+// media
+@media (max-width: 768px) {
+    .admission-cover{
+        margin-top: 4.2rem;
+        .admission-wrap{
+            height: 14rem;
+        }
+    }
+    .admission{
+        margin-top: $space-sec-sm;
+        h2{font-size: 1.1rem !important;}
+        .admission-content{
+            .course-info{
+                .btn{
+                    width: 9rem !important;
+                }
+            }
+            .mess-btn{
+                width: 9rem !important;
+            }
+        }
+        .admission-form{
+            .admission-info{
+                padding: .5rem .85rem;
+                h5{
+                    font-size: .95rem !important;
+                }
+                .step{
+                    width: 1.9rem;
+                    height: 1.9rem;
+                    font-size: .78rem;
+                }
+            }
+        }
+        
+    }
+    .admission-form{
+        .payment-info{
+            .nav{
+                .nav-link{
+                    padding-bottom: 0rem;
+                    padding-top: .5rem;
+                    padding-left: 1rem !important;
+                    padding-right: 1rem !important;
+                    color: $title-color;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap link-->
+    
+    <!-- custom css link-->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!--font-awesome lik-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!--slick css link-->
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/> -->
+    <!-- slick-theme.css- the default styling -->
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
+
+
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+
+    <title>Admission | Scholar's IT</title>
+</head>
+<body class="bg-deep">
+  <!--Main Navigation start-->
+  <header>
+    <!-- Navbar top start-->
+    <nav class="navbar bg-body-tertiary navbar-expand-lg shadow-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" ><img src="img/scholar-it-logo.png" class="object-fit-cover brand-logo" style="height: 65px;" alt="logo"></a>
+        <button  class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="search ">
+              <form action="" role="search">
+                <div class="input-group ">
+                  <input type="search" placeholder="Search" aria-label="Search" class="form-control"  aria-describedby="search-btn">
+                  <button class="btn btn-outline-secondary" type="button" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+              </form>
+            </div>
+            <ul class="navbar-nav justify-content-end  flex-grow-1 pe-3">
+              <li class="nav-item"><a class="nav-link " aria-current="page" href="courses.html">Courses</a></li>
+              <li class="nav-item"><a class="nav-link " href="events.html">Events</a></li>
+              <li class="nav-item"><a class="nav-link " href="community.html">Community</a></li>
+              <li class="nav-item"><a class="nav-link" href="aboutUs.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link active" href="admission.html">Admmision</a></li>
+              <li class="nav-item ms-xl-5 ms-md-3 singin"><a class="nav-link btn text-white px-3" href="singin.html">Sign In</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar top end-->
+
+    <!-- nav bottom start  -->
+    <nav id="nav-bottom" class="fixed-bottom bg-white nav-bottom" >
+      
+      <div class="container">
+        
+        <div class=" " >
+          <ul class="d-flex justify-content-between " >
+            <li class="nav-item">
+              <a class="nav-link nav-link-sm text-center " aria-current="page" href="index.html"><i class="fa-solid fa-house"></i><span class="d-block">Home</span></a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link nav-link-sm" href="courses.html"><i class="fa-solid fa-graduation-cap"></i><span class="d-block">Cource</span></a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link nav-link-sm " href="community.html"><i class="fa-solid fa-user-group ms-3"></i><span class="d-block">Community</span></a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link nav-link-sm " href="events.html"><i class="fa-regular fa-calendar-check"></i><span class="d-block">Event</span></a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link nav-link-sm "  href="userProfile.html"><i class="fa-solid fa-user" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"></i><span class="d-block">Profile</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav bottom end  -->
+
+    <!--user Sidebar start-->
+    <!-- <nav id="sidebarMenu" class=" d-lg-block sidebar collapse">
+        <div class="position-sticky">
+            <div class="list-group list-group-flush  mt-4">
+                <div>
+                    <div class="user-photo mx-auto text-center mt-4 mb-md-5 p-3">
+                      <img src="image/profile-1.jpg" class="img-fluid rounded-circle object-fit-cover" alt="">
+                      <h5 class="text-center mt-3">Mr Jhon</h5>
+                      <p class="text-center"><small>hello@gmail.com</small></p>
+                      
+                    </div>
+                  </div>
+                  <hr class="text-light m-0 mt-4 p-0">
+
+                <a href="userProfile.html" class="nav-item  py-2 mt-3 active"><i class="fa-solid fa-chart-line   me-3"></i><span>Dashboard</span></a>
+                <a href="myOrders.html" class=" nav-item  py-2 "><i class="fa-solid fa-clock-rotate-left me-3"></i><span>My Orders</span></a>
+                <a href="myWishlist.html" class=" nav-item  py-2 "><i class="fa-regular fa-heart me-3"></i><span>My Wishlist</span></a>
+                <a href="profileSetting.html" class=" nav-item  py-2 "><i class="fa-regular fa-circle-user me-3"></i><span>My Setting</span></a>
+                <a href="index.html" class=" nav-item  py-2 "><i class="fa-solid fa-power-off me-3"></i><span>Logout</span></a>
+            </div>
+        </div>
+    </nav> -->
+    
+    <!--user Sidebar end-->
+  </header>
+  <!--Main Navigation end-->
+
+  <!--start main-->
+  <main> 
+    <!-- go to top with scroll start -->
+    <div id="progress" class="progress">
+      <span id="progress-value" class="progress-value">&#x1F815;</span>
+    </div>
+    <!-- go to top with scroll start -->
+
+    <!-- join free seminar start -->
+    <div>
+      <a href="freeSeminar.html" class="join-free-btn py-0 py-xl-1 px-2 pb-2  z-3 rounded-top">Join Free Seminar</a>
+    </div>
+    <!-- join free seminar end -->
+
+    <!--top cover start -->
+    <section class="admission-cover ">
+        <div class="container">
+            <div class="admission-wrap d-flex align-items-center">
+                <div class="">
+                    <h1>Save Your Money</h1>
+                    <p class="mt-3">Grow with Skills and build your career with Scholar’s IT.</p>
+                    <div class="mt-5">
+                        <a href="courses.html"><button class="btn px-3 py-1 py-md-2 px-md-4">See Courses</button></a>
+                        <span><i class="fa-regular fa-calendar-check me-3 ms-5"></i>Since 2019</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+     <!--top cover end -->
+
+  <!-- admission end  -->
+     <section class="admission ">
+        <div class="container">
+            <div class="admission-wrap">
+                <h2 class="heading-style text-center">Admission Form</h2>
+                <p class="text-center text-style mb-4 mt-md-4">Lorem ipsum dolor sit amet consectetur</p>
+                <div class="row  mt-md-4  g-5 g-md-4">
+                    <div class="col-12 col-md-5 col-lg-4 order-2 order-md-1 admission-info">
+                        <div class="admission-content">
+                            <div class="card border-0 course-info shadow-sm">
+                                <img src="img/course/course-1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body p-3 p-lg-4">
+                                  <h5 class="card-title title-style">Web Development</h5>
+                                  <p class="text-style"><small><span class="me-3 reviews"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></span>7k Reviews</small></p>
+                                  <p class="card-text text-style mt-3">Fee 50,000 Tk Only!</p>
+                                  <button class="btn mt-4 py-1">Total Sales 527</button>
+                                </div>
+                            </div>
+                            <div class="card mt-4  course-info p-3 p-lg-4 shadow-sm border-0">
+                                <div class="d-flex justify-content-between">
+                                <div class="">
+                                    <h5>When And Where</h5>
+                                    <div class="u-line" style="background: #00a652; height: 2px; width: 60px;"></div>
+                                </div>
+                                <div><i class="fa-solid fa-calendar-days fs-3"></i></div>
+                                </div>
+                                <h6 class=" mt-4">Scholar’s IT Lab</h6>
+                                <p class="mt-2 lh-base">Feroza Tower, Lift-8, DIT Road, Malibgh, Dhaka.</p>
+                                <div class="d-flex mt-4">
+                                <div>
+                                    <p>Class:</p>
+                                    <p>Time: </p>
+                                    <p>Schedule: </p>
+                                    <p class="mt-4">Instractor: </p>
+                                    <p>Career: </p>
+                                </div>
+        
+                                <div class="ms-3">
+                                    <p><span >Total 24 Classes</span></p>
+                                    <p><span>Morning 10 AM to 12 PM</span></p>
+                                    <p><span>Saterday, Monday & Wednesday</span></p>
+                                    <p class="mt-4"><span>Mr. Abdul Barik</span></p>
+                                    <p><span>Sr. Software Eng.</span></p>
+                                    
+                                </div>
+                                </div>
+                                <button class="btn py-1 mt-3">Offline</button>
+                            </div>
+
+                            <div class="card mt-4 need-help p-3 p-lg-4 shadow-sm border-0">
+                                <div class="d-flex justify-content-between">
+                                <div class="">
+                                    <h5>Need Help?</h5>
+                                    <div class="u-line" style="background: #00a652; height: 2px; width: 60px;"></div>
+                                </div>
+                                <div><i class="fa-solid fa-headset fs-3"></i></div>
+                                </div>
+                                <h6 class=" mt-4">24/7 Hours Support</h6>
+                                <div class="d-flex mt-2">
+                                <div>
+                                    <p>Call Us:</p>
+                                    <p>E-mail: </p>
+                                </div>
+        
+                                <div class="ms-3">
+                                    <p><a href="tel: +88 01711"><span >+88 01711-XXXXXX</span></a></p>
+                                    <p><a href="mailto: hello@demo.com"><span>hello@scholar.com</span></a></p>
+                                </div>
+                                </div>
+                                <button class="btn mt-3 mess-btn py-1" style="width: 11rem;">Message</button>
+                            </div>
+    
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-7 col-lg-8 order-1 order-md-2">
+                        <form action="" class="admission-form">
+                            <!-- billing info  -->
+                            <div class="billing-info">
+                                <div class="admission-info  mb-4 rounded d-flex justify-content-between">
+                                    <div><h5 class="">Student's Billing Info</h5></div>
+                                    <div class="text-center step ">01</div>
+                                </div>
+                                <div class="mb-3 row ">
+                                    <div class="col">
+                                      <!-- <label for="std-num" class="form-label">Mobile<span class="required text-danger">*</span></label> -->
+                                      <input type="text" class="form-control" id="std-fname" placeholder="First Name" aria-describedby="fnameHelp" required>
+                                    </div>
+                                    <div class="col">
+                                      <input type="text" class="form-control" id="std-lname" placeholder="Last Name" aria-describedby="lanameHelp">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row ">
+                                    <div class="col">
+                                      <input type="number" class="form-control" id="std-num" placeholder="Mobile number" aria-describedby="mobileHelp" required>
+                                    </div>
+                                    <div class="col">
+                                      <input type="email" class="form-control" id="std-mail" placeholder="Email address" aria-describedby="emailHelp" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row ">
+                                    <div class="col">
+                                      <input type="text" class="form-control" id="std-bDate" placeholder="Date of Birth" aria-describedby="dateHelp" required>
+                                    </div>
+                                    <div class="col">
+                                      <input type="number" class="form-control" id="std-nid" placeholder="NID No." aria-describedby="nidHelp">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row ">
+                                    <div class="col">
+                                      <input type="text" class="form-control" id="std-blood" placeholder="Blood Group" aria-describedby="bloodHelp" >
+                                    </div>
+                                    <div class="col">
+                                        <select class="form-select" aria-label="genHelp" required>
+                                            <option selected>Gender</option>
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
+                                            <option value="3">Third Gen</option>
+                                          </select>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row ">
+                                    <div class="col">
+                                      <input type="text" class="form-control" id="std-address" placeholder="Present Address" aria-describedby="addressHelp" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row ">
+                                    <div class="col">
+                                      <input type="text" class="form-control" id="std-father" placeholder="Father's Name" aria-describedby="fatherHelp" required>
+                                    </div>
+                                    <div class="col">
+                                      <input type="text" class="form-control" id="std-mother" placeholder="Mother's Name" aria-describedby="motherHelp">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row ">
+                                    <div class="col">
+                                      <input type="text" class="form-control" id="std-guardian" placeholder="Guardian Name" aria-describedby="guardianHelp" required>
+                                    </div>
+                                    <div class="col">
+                                      <input type="number" class="form-control" id="std-gMobile" placeholder="Guardian Mobile" aria-describedby="nidHelp" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row ">
+                                    <div class="col">
+                                      <input type="text" class="form-control" id="std-hear" placeholder="Hear From" aria-describedby="haerHelp" >
+                                    </div>
+                                    <div class="col">
+                                      <input type="text" class="form-control" id="std-refer" placeholder="Refer Name" aria-describedby="referHelp">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- course info  -->
+                            <div class="course-info">
+                                <div class="admission-info mt-4 mt-md-5  mb-4 rounded d-flex justify-content-between">
+                                    <div><h5 class="">Course Info</h5></div>
+                                    <div class="text-center step ">02</div>
+                                </div>
+
+                                <div class="mb-3 row ">
+                                    <div class="col">
+                                        <select class="form-select" aria-label="courseHelp" required>
+                                            <option selected>Select Course</option>
+                                            <option value="1">Digital Marketing</option>
+                                            <option value="2">Graphics Design</option>
+                                            <option value="3">Web Development</option>
+                                          </select>
+                                    </div>
+                                    <div class="col">
+                                        <select class="form-select" aria-label="typeHelp" required>
+                                            <option selected>Course Type</option>
+                                            <option value="1">Online</option>
+                                            <option value="2">Offline</option>
+                                            <option value="3">Recorded</option>
+                                          </select>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row ">
+                                    <div class="col">
+                                        <select class="form-select" aria-label="sdateHelp" required>
+                                            <option selected>Start Date</option>
+                                            <option value="1">27 Sep 2023</option>
+                                            <option value="2">21 Nov 2023</option>
+                                            <option value="3">24 Nov 2023</option>
+                                          </select>
+                                    </div>
+                                    <div class="col">
+                                        <select class="form-select" aria-label="bNoHelp" required>
+                                            <option selected>Batch No.</option>
+                                            <option value="1">2007</option>
+                                            <option value="2">2009</option>
+                                            <option value="3">2010</option>
+                                          </select>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row ">
+                                    <div class="col">
+                                        <select class="form-select" aria-label="cTimeHelp" required>
+                                            <option selected>Class Time</option>
+                                            <option value="1">10 AM to 12 PM</option>
+                                            <option value="2">4 PM to 6 PM</option>
+                                            <option value="3">8 PM to 10 PM</option>
+                                          </select>
+                                    </div>
+                                    <div class="col">
+                                        <select class="form-select" aria-label="cDaysHelp" required>
+                                            <option selected>Schedule</option>
+                                            <option value="1">Saterday, Monday & Wednesday</option>
+                                            <option value="2">Sunday, Tuesday, Thursday</option>
+                                            <option value="3">Saterday, Monday & Wednesday</option>
+                                          </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Payment info  -->
+                            <div class="payment-info">
+                                <div class="admission-info mt-4 mt-md-5  mb-4 rounded d-flex justify-content-between">
+                                    <div><h5 class="">Payment Info</h5></div>
+                                    <div class="text-center step ">03</div>
+                                </div>
+
+
+                                <ul class="nav justify-content-center nav-pills mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link " id="pills-cash-tab" data-bs-toggle="pill" data-bs-target="#pills-cash" type="button" role="tab" aria-controls="pills-cash" aria-selected="true">
+                                        <label for="cash-info" class="form-label">Cash</label>
+                                        <input type="text" class="form-control" id="cash-info" placeholder="" aria-describedby="cinfoHelp"  style="display: none;">
+                                      </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link active" id="pills-bank-tab" data-bs-toggle="pill" data-bs-target="#pills-bank" type="button" role="tab" aria-controls="pills-bank" aria-selected="false">
+                                        <label for="bank-info" class="form-label">Bank</label>
+                                        <input type="text" class="form-control" id="bank-info" placeholder="" aria-describedby="binfoHelp"  style="display: none;">
+                                      </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link" id="pills-mobile-tab" data-bs-toggle="pill" data-bs-target="#pills-mobile" type="button" role="tab" aria-controls="pills-mobile" aria-selected="false">
+                                        <label for="mobile-info" class="form-label">Mobile</label>
+                                        <input type="text" class="form-control" id="mobile-info" placeholder="" aria-describedby="minfoHelp"  style="display: none;">
+                                      </button>
+                                    </li>
+                                  </ul>
+                                  <div class="tab-content" id="pills-tabContent">
+                                    <!-- cash info  -->
+                                    <div class="tab-pane fade " id="pills-cash" role="tabpanel" aria-labelledby="pills-cash-tab" tabindex="0">Cash</div>
+                                    <!-- bank info  -->
+                                    <div class="tab-pane fade show active" id="pills-bank" role="tabpanel" aria-labelledby="pills-bank-tab" tabindex="0">
+                                        <div class="mb-3 row ">
+                                            <div class="col">
+                                              <input type="text" class="form-control" id="bank-name" placeholder="Bank Name" aria-describedby="bankHelp" required>
+                                            </div>
+                                            <div class="col">
+                                              <input type="text" class="form-control" id="branch-name" placeholder="Branch Name" aria-describedby="branchHelp" required>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row ">
+                                            <div class="col">
+                                              <input type="text" class="form-control" id="holder-name" placeholder="Holder Name" aria-describedby="holderHelp" required>
+                                            </div>
+                                            <div class="col">
+                                              <input type="text" class="form-control" id="accounnt-no" placeholder="Account No." aria-describedby="act-noHelp" required>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row ">
+                                            <div class="col">
+                                              <input type="number" class="form-control" id="amount" placeholder="Amount" aria-describedby="amountHelp" required>
+                                            </div>
+                                            <div class="col">
+                                              <input type="text" class="form-control" id="note" placeholder="Note" aria-describedby="noteHelp" required>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- mobile bank info  -->
+                                    <div class="tab-pane fade" id="pills-mobile" role="tabpanel" aria-labelledby="pills-mobile-tab" tabindex="0">mobile</div>
+                                  </div>
+
+                            </div>
+                            
+
+                            <div class="mt-4">
+                                <button type="submit" class="btn px-3 py-1 py-lg-2 px-md-4">Procced Payment</button>
+                                <button type="submit" class="btn btn-outline  px-5 cancel-btn ms-3 py-1 py-lg-2 ms-lg-5">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+     </section>
+  <!-- admission end  -->
+ 
+  
+  
+    <!--footer start-->
+    <section id="footer" class="footer">
+      <div class="container">
+        <div class="footer-wrapping ">
+            <div class="row row-cols-2 row-cols-md-4 row-cols-lg-4 gy-4 ">
+
+                <div class="boxiew col">
+                    <div class="logo" style="width:120px">
+                      <img src="img/scholar-it-logo-light.png" class="img-fluid" alt="Scholar's IT logo">
+                    </div>
+        
+                    <div class="contact-info">
+                      
+                      <div class="mb-2"><a href="Tel: 123-456-7890"><i class="fa-solid fa-phone"></i>+88 01721-XXXXXX</a></div>
+                      <div class="mb-2"><a href="mailto:hello@scholarsit.com"><i class="fa-solid fa-envelope"></i>hello@scholarsit.com</a></div>
+                      <div><a href="#"><i class="pt-1 fa-sharp fa-solid fa-location-dot"></i>Feroza Tower, 8th Floor, DIT Road, Malibagh Chowdhurypara, Dhaka.</a> </div>
+                      
+                    </div>
+                </div>
+
+                <div class="quick-link col">
+                    <div><h5>Quick Link</h5></div>
+                    <div class="info-link">
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>About Us</a></div>
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Privacy Policy</a></div>
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Terms & Conditions</a></div>
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Community Standard</a></div>
+                    </div>
+                </div>
+
+                <div class="course-link col">
+                  <div><h5>Our Cources</h5></div>
+                  <div class="info-link">
+                    <div><a href="#"><i class="fa-solid fa-angle-right"></i>Digital Marketing</a></div>
+                    <div><a href="#"><i class="fa-solid fa-angle-right"></i>Graphic Design</a></div>
+                    <div><a href="#"><i class="fa-solid fa-angle-right"></i>Web Design</a></div>
+                    <div><a href="#"><i class="fa-solid fa-angle-right"></i>Web Development</a></div>
+                  </div>
+                </div>
+        
+                <div class="boxiew-link col">
+                    <div><h5>Get Started</h5></div>
+                    <div class="info-link">
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Admmision</a></div>
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Community</a></div>
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Join timelines</a></div>
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Join Free Seminer</a></div>
+                    </div>
+        
+                    <div class="follow-us ">
+                      <div><h5>Follow Us</h5></div>
+                      <div class="social-link">
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+        <div class="copy-right d-flex justify-content-center pb-3"> <small>Copyright © 2023 Scholar's IT || All right reserved</small></div>
+      </div>
+
+    </section>
+    <!--footer end-->
+
+  </main>
+  <!--end main-->
+
+
+
+    <!--custom js link-->
+    <script src="js/main.js"></script>
+
+    <!--Bootstrap link-->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+
+    <!--slick js link-->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+      
+
+    <script src="js/jquery_3.7.0_jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+
+
+    </body>
+</html>

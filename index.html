@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap link-->
+    
+    <!-- custom css link-->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!--font-awesome lik-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!--slick css link-->
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/> -->
+    <!-- slick-theme.css- the default styling -->
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
+
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+
+    <title>Home | Scholar's IT</title>
+</head>
+<body>
+  <!--Main Navigation start-->
+  <header>
+    <!-- Navbar top start-->
+    <nav class="navbar bg-body-tertiary navbar-expand-lg shadow-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" ><img src="img/scholar-it-logo.png" class="object-fit-cover brand-logo" style="height: 65px;" alt="logo"></a>
+        <button  class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="search ">
+              <form action="" role="search">
+                <div class="input-group ">
+                  <input type="search" placeholder="Search" aria-label="Search" class="form-control"  aria-describedby="search-btn">
+                  <button class="btn btn-outline-secondary" type="button" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+              </form>
+            </div>
+            <ul class="navbar-nav justify-content-end  flex-grow-1 pe-3">
+              <li class="nav-item"><a class="nav-link " aria-current="page" href="courses.html">Courses</a></li>
+              <li class="nav-item"><a class="nav-link " href="events.html">Events</a></li>
+              <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+              <li class="nav-item"><a class="nav-link" href="aboutUs.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="admission.html">Admmision</a></li>
+              <li class="nav-item ms-xl-5 ms-md-3 singin"><a class="nav-link btn text-white px-3" href="singin.html">Sign In</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar top end-->
+
+    <!-- nav bottom start  -->
+    <nav id="nav-bottom" class="fixed-bottom bg-white nav-bottom" >
+      
+      <div class="container">
+        
+        <div class=" " >
+          <ul class="d-flex justify-content-between " >
+            <li class="nav-item">
+              <a class="nav-link nav-link-sm text-center active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i><span class="d-block">Home</span></a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link nav-link-sm" href="courses.html"><i class="fa-solid fa-graduation-cap"></i><span class="d-block">Cource</span></a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link nav-link-sm " href="community.html"><i class="fa-solid fa-user-group ms-3"></i><span class="d-block">Community</span></a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link nav-link-sm " href="events.html"><i class="fa-regular fa-calendar-check"></i><span class="d-block">Event</span></a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link nav-link-sm "  href="userProfile.html"><i class="fa-solid fa-user" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"></i><span class="d-block">Profile</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav bottom end  -->
+
+    <!--user Sidebar start-->
+    <!-- <nav id="sidebarMenu" class=" d-lg-block sidebar collapse">
+        <div class="position-sticky">
+            <div class="list-group list-group-flush  mt-4">
+                <div>
+                    <div class="user-photo mx-auto text-center mt-4 mb-md-5 p-3">
+                      <img src="image/profile-1.jpg" class="img-fluid rounded-circle object-fit-cover" alt="">
+                      <h5 class="text-center mt-3">Mr Jhon</h5>
+                      <p class="text-center"><small>hello@gmail.com</small></p>
+                      
+                    </div>
+                  </div>
+                  <hr class="text-light m-0 mt-4 p-0">
+
+                <a href="userProfile.html" class="nav-item  py-2 mt-3 active"><i class="fa-solid fa-chart-line   me-3"></i><span>Dashboard</span></a>
+                <a href="myOrders.html" class=" nav-item  py-2 "><i class="fa-solid fa-clock-rotate-left me-3"></i><span>My Orders</span></a>
+                <a href="myWishlist.html" class=" nav-item  py-2 "><i class="fa-regular fa-heart me-3"></i><span>My Wishlist</span></a>
+                <a href="profileSetting.html" class=" nav-item  py-2 "><i class="fa-regular fa-circle-user me-3"></i><span>My Setting</span></a>
+                <a href="index.html" class=" nav-item  py-2 "><i class="fa-solid fa-power-off me-3"></i><span>Logout</span></a>
+            </div>
+        </div>
+    </nav> -->
+    
+    <!--user Sidebar end-->
+  </header>
+  <!--Main Navigation end-->
+
+  <!--start main-->
+  <main> 
+    <!-- go to top with scroll start -->
+    <div id="progress" class="progress">
+      <span id="progress-value" class="progress-value">&#x1F815;</span>
+    </div>
+    <!-- go to top with scroll start -->
+
+    <!-- join free seminar start -->
+    <div>
+      <a href="freeSeminar.html" class="join-free-btn py-0 py-xl-1 px-2 pb-2  z-3 rounded-top">Join Free Seminar</a>
+    </div>
+    <!-- join free seminar end -->
+
+    <!-- top cover start  -->
+    <section id="top-cover" class="home-cover">
+      <div class="container">
+        <div class="top-cover-wrap d-flex align-items-center" >
+          
+            <div class="row">
+              <div class="col-auto">
+                    <h1 class="fw-semibold ">GROW WITH SKILLS</h1>
+                    <div class="d-flex mt-3 review align-items-center">
+                      <h5 class=" title-style me-4 pt-1">Enhance Your Skill Lebel.</h5>
+                      <div class="review">
+                          <a href="admission.html"><small class="color-txt">with 100% Ensure!</small></a>
+                      </div>
+                    </div>
+                    <p class="mt-3 mt-lg-4 mt-xxl-5 text-style mb-2">The Next Free Class will be start at 27 Sep 2023.</p>
+                    <h6 class="mt-0 text-style"><span class="color-txt fs-5 me-3">08:30 PM</span></h6>
+                    <div class="mt-3 mt-lg-4 mt-xxl-5">
+                      <a href="freeSeminar.html"><button type="button" class="btn py-1">Join Free Seminar</button></a>
+                    </div>
+                </div>
+              <div class="col"></div>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- top cover end  -->
+
+    <!-- popular course start -->
+    <section class="popular-course">
+      <div class="container">
+        <div class="polr-course-wrap mx-auto p-4">
+          <div class="d-flex justify-content-evenly">
+            <div class="">
+              <div class="card border-0" >
+                <div class="text-center"><img src="img/icons/online-education.png" class="card-img-top polr-img" alt="..."></div>
+                <div class="card-body">
+                  <h5 class="card-title text-center">Live Courses</h5>
+                  <p class="card-text text-center"><small>77 Classes</small></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="">
+              <div class="card border-0" >
+                <div class="text-center"><img src="img/icons/offline-courses.png" class="card-img-top polr-img" alt="..."></div>
+                <div class="card-body">
+                  <h5 class="card-title text-center">Offline Courses</h5>
+                  <p class="card-text text-center"><small>77 Classes</small></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="">
+              <div class="card border-0" >
+                <div class="text-center"><img src="img/icons/video-lesson.png" class="card-img-top polr-img" alt="..."></div>
+                <div class="card-body">
+                  <h5 class="card-title text-center">Record Courses</h5>
+                  <p class="card-text text-center"><small>77 Classes</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- popular course end -->
+
+    <!-- trending course start -->
+    <section class="trending-course overflow-hidden">
+      <div class="container">
+        <div class="trend-wrap">
+          <h2 class="text-center heading-style">Our Trending Courses</h2>
+          <p class="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="trend-course-slide  mt-3 mt-md-5">
+
+            <div class="card my-1 border-0 shadow-sm overflow-hidden" >
+              <img src="img/course/course-1.jpg" class="card-img-top " alt="...">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h5 class="card-title title-style">Digital Marketing</h5>
+                    <div class="reviews">
+                      <a href="#"><small ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span>7k Reviews</span></small></a>
+                    </div>
+                    
+                  </div>
+                  <div class="activity ">
+                    <div><a href="#" class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                    <div class="mt-2"><a href="#" class="link"><i class="fa-regular fa-share-from-square"></i></a></div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="mt-1"><p class="card-text mt-3 text-style ">25,000 Tk Only</p></div>
+                  <div class=""><a href="#" class="btn mt-4">Get Scholarship</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card my-1 border-0 shadow-sm overflow-hidden" >
+              <img src="img/course/course-2.jpg" class="card-img-top " alt="...">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h5 class="card-title title-style">Digital Marketing</h5>
+                    <div class="reviews">
+                      <a href="#"><small ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span>7k Reviews</span></small></a>
+                    </div>
+                    
+                  </div>
+                  <div class="activity ">
+                    <div><a href="#" class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                    <div class="mt-2"><a href="#" class="link"><i class="fa-regular fa-share-from-square"></i></a></div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="mt-1"><p class="card-text mt-3 text-style ">25,000 Tk Only</p></div>
+                  <div class=""><a href="#" class="btn mt-4">Get Scholarship</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card my-1 border-0 shadow-sm overflow-hidden" >
+              <img src="img/course/course-1.jpg" class="card-img-top " alt="...">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h5 class="card-title title-style">Digital Marketing</h5>
+                    <div class="reviews">
+                      <a href="#"><small ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span>7k Reviews</span></small></a>
+                    </div>
+                    
+                  </div>
+                  <div class="activity ">
+                    <div><a href="#" class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                    <div class="mt-2"><a href="#" class="link"><i class="fa-regular fa-share-from-square"></i></a></div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="mt-1"><p class="card-text mt-3 text-style ">25,000 Tk Only</p></div>
+                  <div class=""><a href="#" class="btn mt-4">Get Scholarship</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card my-1 border-0 shadow-sm overflow-hidden" >
+              <img src="img/course/course-3.jpg" class="card-img-top " alt="...">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h5 class="card-title title-style">Digital Marketing</h5>
+                    <div class="reviews">
+                      <a href="#"><small ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span>7k Reviews</span></small></a>
+                    </div>
+                    
+                  </div>
+                  <div class="activity ">
+                    <div><a href="#" class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                    <div class="mt-2"><a href="#" class="link"><i class="fa-regular fa-share-from-square"></i></a></div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="mt-1"><p class="card-text mt-3 text-style ">25,000 Tk Only</p></div>
+                  <div class=""><a href="#" class="btn mt-4">Get Scholarship</a></div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section> 
+    
+    
+    <!-- successfull story start  -->
+    <section class="success-story ">
+      <div class="container">
+        <div class="story-wrap">
+          <h2 class="title-style text-center">Our Successfull Story</h2>
+          <p class="text-style text-center mt-3">Lorem ipsum dolor sit amet consectetur debitis </p>
+          <div class="story-card mt-3 mt-md-5">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              
+              <div class="col">
+                <div class="card border-0 shadow" >
+                  <div class="card-head">
+                    <img src="img/story/story-1.png" class="card-img-top" alt="...">
+                    <div class="overlay rounded-top">
+                      <a href="#" class="play-btn " title="Play Now "><i class="fa-regular fa-circle-play"></i></a>
+                    </div>
+                  </div>
+                  <div class="card-body px-md-5 py-md-4">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <div>
+                          <img src="img/story/profile-1.jpg" class="rounded-circle object-fit-cover me-3 rev-photo" alt="...">
+                        </div>
+                        <div class="mt-md-3">
+                          <h5 class="title-style">Mr Jhone Doe</h5>
+                          <p class="text-style">Digital Marketer</p>
+                        </div>
+                      </div>
+                      <div class="mt-md-3">
+                        <p class="text-style  m-0 mb-1">Batch No. 27</p>
+                        <p class="text-style ">From Sherpur </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card border-0 " >
+                  <div class="card-head">
+                    <img src="img/story/story-2.jpg" class="card-img-top" alt="...">
+                    <div class="overlay rounded-top">
+                      <a href="#" class="play-btn " title="Play Now "><i class="fa-regular fa-circle-play"></i></a>
+                    </div>
+                  </div>
+                  <div class="card-body px-md-5 py-md-4">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <div>
+                          <img src="img/story/profile-1.jpg" class="rounded-circle object-fit-cover me-3 rev-photo" alt="...">
+                        </div>
+                        <div class="mt-md-3">
+                          <h5 class="title-style">Mr Jhone Doe</h5>
+                          <p class="text-style">Digital Marketer</p>
+                        </div>
+                      </div>
+                      <div class="mt-md-3">
+                        <p class="text-style  m-0 mb-1">Batch No. 27</p>
+                        <p class="text-style ">From Sherpur </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card border-0 " >
+                  <div class="card-head">
+                    <img src="img/story/story-3.jpg" class="card-img-top" alt="...">
+                    <div class="overlay rounded-top">
+                      <a href="#" class="play-btn " title="Play Now "><i class="fa-regular fa-circle-play"></i></a>
+                    </div>
+                  </div>
+                  <div class="card-body px-md-5 py-md-4">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <div>
+                          <img src="img/story/profile-1.jpg" class="rounded-circle object-fit-cover me-3 rev-photo" alt="...">
+                        </div>
+                        <div class="mt-md-3">
+                          <h5 class="title-style">Mr Jhone Doe</h5>
+                          <p class="text-style">Digital Marketer</p>
+                        </div>
+                      </div>
+                      <div class="mt-md-3">
+                        <p class="text-style  m-0 mb-1">Batch No. 27</p>
+                        <p class="text-style ">From Sherpur </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card border-0 shadow" >
+                  <div class="card-head">
+                    <img src="img/story/story-4.jpg" class="card-img-top" alt="...">
+                    <div class="overlay rounded-top">
+                      <a href="#" class="play-btn " title="Play Now "><i class="fa-regular fa-circle-play"></i></a>
+                    </div>
+                  </div>
+                  <div class="card-body px-md-5 py-md-4">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <div>
+                          <img src="img/story/profile-1.jpg" class="rounded-circle object-fit-cover me-3 rev-photo" alt="...">
+                        </div>
+                        <div class="mt-md-3">
+                          <h5 class="title-style">Mr Jhone Doe</h5>
+                          <p class="text-style">Digital Marketer</p>
+                        </div>
+                      </div>
+                      <div class="mt-md-3">
+                        <p class="text-style  m-0 mb-1">Batch No. 27</p>
+                        <p class="text-style ">From Sherpur </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- successfull story end -->
+
+    <!-- counter start  -->
+    <section class="counter">
+      <div class="container">
+        <div class="counter-wrap">
+          <div class="row g-4 row-cols-1 row-cols-md-3">
+            <div class="col">
+              <h4 class="text-center ">Total Visitors</h4>
+              <h1 class="text-center  mt-3 fw-bold">10,000</h1>
+            </div>
+            
+            <div class="col border-start border-2 border-light border-opacity-50">
+              <h4 class="text-center ">Running Students</h4>
+              <h1 class="text-center mt-3 fw-bold">7,500</h1>
+            </div>
+            <div class="col border-start border-2 border-light border-opacity-50">
+              <h4 class="text-center ">Profesional Works</h4>
+              <h1 class="text-center  mt-3 fw-bold">3,000</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- counter end -->
+
+    <!-- seminar start  -->
+    <section class="seminer">
+      <div class="container">
+        <div class="seminer-wrap">
+          <h2 class="text-center heading-style">Celebraty Seminars</h2>
+          <p class="text-center text-style mt-3">Lorem ipsum dolor sit amet consectetur </p>
+          
+          <div class="row row-cols-1 row-cols-md-2 gy-2 gy-lg-4 gx-4 gx-lg-5 mt-3 mt-md-5">
+
+            <div class="col">
+              <div class="card border-0 shadow p-3 p-lg-4 p-xl-5 bg-light mb-3" >
+                <div class="row g-0">
+                  <div class="col-lg-4">
+                    <div class="d-flex d-lg-block">
+                      <div class="me-3 img-div me-lg-0">
+                        <img src="img/profile-1.jpg" class="img-fluid rounded object-fit-cover" alt="...">
+                      </div>
+                      <div>
+                        <h6 class="title-style mt-4">Mr Michel</h6>
+                        <p class="text-style m-0">Msc in CSE, BUET</p>
+                        <p class="text-style">Software Eng.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-8">
+                    <hr class="p-0 " style="opacity: .15;">
+                    <div class="card-body ms-lg-3 mt-4 mt-lg-0 p-0 pt-xl-0">
+                      <h5 class="card-title title-style text-center">Grow Skill</h5>
+                      <p class="text-style text-center">Fee: 500 Tk Only</p>
+                      <p class="card-text lh-base fw-light mt-3 mt-lg-4 text-style">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae placeat illum, consequuntur minima minus exercitationem omnis aut totam iureiste <br><br>  debitis tempora ipsum veniam nulla. Saepe est obcaecati vitae voluptas.</p>
+                      <div class="text-center"><a href="#"><button class="btn mt-4 px-5">Join Now</button></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card border-0  p-3 p-lg-4 p-xl-5 bg-light mb-3" >
+                <div class="row g-0">
+                  <div class="col-lg-4">
+                    <div class="d-flex d-lg-block">
+                      <div class="me-3 img-div me-lg-0">
+                        <img src="img/profile-1.jpg" class="img-fluid rounded object-fit-cover" alt="...">
+                      </div>
+                      <div>
+                        <h6 class="title-style mt-4">Mr Michel</h6>
+                        <p class="text-style m-0">Msc in CSE, BUET</p>
+                        <p class="text-style">Software Eng.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-8">
+                    <hr class="p-0 " style="opacity: .15;">
+                    <div class="card-body ms-lg-3 mt-4 mt-lg-0 p-0 pt-xl-0">
+                      <h5 class="card-title title-style text-center">Grow Skill</h5>
+                      <p class="text-style text-center">Fee: 500 Tk Only</p>
+                      <p class="card-text lh-base fw-light mt-3 mt-lg-4 text-style">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae placeat illum, consequuntur minima minus exercitationem omnis aut totam iureiste <br><br>  debitis tempora ipsum veniam nulla. Saepe est obcaecati vitae voluptas.</p>
+                      <div class="text-center"><a href="#"><button class="btn mt-4 px-5">Join Now</button></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card border-0  p-3 p-lg-4 p-xl-5 bg-light mb-3" >
+                <div class="row g-0">
+                  <div class="col-lg-4">
+                    <div class="d-flex d-lg-block">
+                      <div class="me-3 img-div me-lg-0">
+                        <img src="img/profile-1.jpg" class="img-fluid rounded object-fit-cover" alt="...">
+                      </div>
+                      <div>
+                        <h6 class="title-style mt-4">Mr Michel</h6>
+                        <p class="text-style m-0">Msc in CSE, BUET</p>
+                        <p class="text-style">Software Eng.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-8">
+                    <hr class="p-0 " style="opacity: .15;">
+                    <div class="card-body ms-lg-3 mt-4 mt-lg-0 p-0 pt-xl-0">
+                      <h5 class="card-title title-style text-center">Grow Skill</h5>
+                      <p class="text-style text-center">Fee: 500 Tk Only</p>
+                      <p class="card-text lh-base fw-light mt-3 mt-lg-4 text-style">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae placeat illum, consequuntur minima minus exercitationem omnis aut totam iureiste <br><br>  debitis tempora ipsum veniam nulla. Saepe est obcaecati vitae voluptas.</p>
+                      <div class="text-center"><a href="#"><button class="btn mt-4 px-5">Join Now</button></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card border-0  p-3 p-lg-4 p-xl-5 bg-light mb-3" >
+                <div class="row g-0">
+                  <div class="col-lg-4">
+                    <div class="d-flex d-lg-block">
+                      <div class="me-3 img-div me-lg-0">
+                        <img src="img/profile-1.jpg" class="img-fluid rounded object-fit-cover" alt="...">
+                      </div>
+                      <div>
+                        <h6 class="title-style mt-4">Mr Michel</h6>
+                        <p class="text-style m-0">Msc in CSE, BUET</p>
+                        <p class="text-style">Software Eng.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-8">
+                    <hr class="p-0 " style="opacity: .15;">
+                    <div class="card-body ms-lg-3 mt-4 mt-lg-0 p-0 pt-xl-0">
+                      <h5 class="card-title title-style text-center">Grow Skill</h5>
+                      <p class="text-style text-center">Fee: 500 Tk Only</p>
+                      <p class="card-text lh-base fw-light mt-3 mt-lg-4 text-style">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae placeat illum, consequuntur minima minus exercitationem omnis aut totam iureiste <br><br>  debitis tempora ipsum veniam nulla. Saepe est obcaecati vitae voluptas.</p>
+                      <div class="text-center"><a href="#"><button class="btn mt-4 px-5">Join Now</button></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- seminar end  -->
+
+    <!--footer start-->
+    <section id="footer" class="footer">
+      <div class="container">
+        <div class="footer-wrapping ">
+            <div class="row row-cols-2 row-cols-md-4 row-cols-lg-4 gy-4 ">
+
+                <div class="boxiew col">
+                    <div class="logo" style="width:120px">
+                      <img src="img/scholar-it-logo-light.png" class="img-fluid" alt="Scholar's IT logo">
+                    </div>
+        
+                    <div class="contact-info">
+                      
+                      <div class="mb-2"><a href="Tel: 123-456-7890"><i class="fa-solid fa-phone"></i>+88 01721-XXXXXX</a></div>
+                      <div class="mb-2"><a href="mailto:hello@scholarsit.com"><i class="fa-solid fa-envelope"></i>hello@scholarsit.com</a></div>
+                      <div><a href="#"><i class="pt-1 fa-sharp fa-solid fa-location-dot"></i>Feroza Tower, 8th Floor, DIT Road, Malibagh Chowdhurypara, Dhaka.</a> </div>
+                      
+                    </div>
+                </div>
+
+                <div class="quick-link col">
+                    <div><h5>Quick Link</h5></div>
+                    <div class="info-link">
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>About Us</a></div>
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Privacy Policy</a></div>
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Terms & Conditions</a></div>
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Community Standard</a></div>
+                    </div>
+                </div>
+
+                <div class="course-link col">
+                  <div><h5>Our Cources</h5></div>
+                  <div class="info-link">
+                    <div><a href="#"><i class="fa-solid fa-angle-right"></i>Digital Marketing</a></div>
+                    <div><a href="#"><i class="fa-solid fa-angle-right"></i>Graphic Design</a></div>
+                    <div><a href="#"><i class="fa-solid fa-angle-right"></i>Web Design</a></div>
+                    <div><a href="#"><i class="fa-solid fa-angle-right"></i>Web Development</a></div>
+                  </div>
+                </div>
+        
+                <div class="boxiew-link col">
+                    <div><h5>Get Started</h5></div>
+                    <div class="info-link">
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Admmision</a></div>
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Community</a></div>
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Join Events</a></div>
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Join Free Seminer</a></div>
+                    </div>
+        
+                    <div class="follow-us ">
+                      <div><h5>Follow Us</h5></div>
+                      <div class="social-link">
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+        <div class="copy-right d-flex justify-content-center pb-3"> <small>Copyright © 2023 Scholar's IT || All right reserved</small></div>
+      </div>
+
+    </section>
+    <!--footer end-->
+
+  </main>
+  <!--end main-->
+
+
+
+    <!--custom js link-->
+    <script src="js/main.js"></script>
+
+    <!--Bootstrap link-->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+
+    <!--slick js link-->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+      
+
+    <script src="js/jquery_3.7.0_jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+
+    <script>
+      $('.trend-course-slide').slick({
+        infinite: true,
+    slidesToShow: 3,
+    centerPadding: '20px',
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        centerPadding: '20px',
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+      });
+    </script>
+       
+</body>
+</html>

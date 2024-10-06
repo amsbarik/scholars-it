@@ -1,0 +1,50 @@
+@use "../partials/index" as *;
+@use "../base/index" as *;
+
+.seminar-cover{
+    margin-top: $space-sec-top;
+    background-image: linear-gradient(to bottom, rgba(0, 166, 82, 0.85), rgba(0, 166, 82, .90)), url('../img/carousel-1.jpg');
+    // height: 24rem;
+    .seminar-wrap{
+        height: 24rem;
+        color: $color-light;
+        .btn{
+            background-color: $color-light !important;
+            transition: .4s;
+            a{color: $primary-color;}
+            &:hover {
+                a{color: $title-color;}
+              }
+        }
+    }
+}
+
+//seminar css start
+.seminar{
+    margin-top: $space-sec-xl;
+    .seminar-wrap{
+        .seminar-content{
+            p{
+                color: $text-color;
+                font-size: .85rem;
+                margin-bottom: .5rem;
+            }
+            i{color: $primary-color;}
+            
+            .need-help{
+               a{
+                color: $text-color ;
+               }
+            }
+            
+        }
+    }
+    .seminar-form{
+        input:focus, select:focus{
+            box-shadow: none !important;
+            border: 1px solid $primary-color !important;
+            outline: none !important;
+        }
+    }
+}
+//seminar css end

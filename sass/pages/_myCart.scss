@@ -1,0 +1,394 @@
+@use "../partials/index" as *;
+@use "../base/index" as *;
+
+
+
+// my cart classes
+.return-shop{
+    transition: .3s;
+    &:hover{
+        i{transform: scale(1.2) !important;}
+        a{text-decoration: underline !important;}
+    }
+    a{color: $primary-color;
+
+    
+    }
+}
+.continue{
+    a{
+        color: $title-color-light !important;
+    }
+}
+
+.cart-action{
+    transition: .3s;
+    &:hover{
+        a{
+            
+            i{transform: scale(1.2) !important;}
+        }
+    }
+    
+}
+
+.terms-link{
+    color: $primary-color;
+    transition: .3s;
+    &:hover{
+        text-decoration: underline;
+        i{
+            transform: scale(1.1);
+        }
+    }
+}
+.total{font-weight: 600; color: $title-color;}
+
+
+// my cart start
+
+.my-cart{
+    padding-top: 10rem;
+    // padding-bottom: 8rem;
+    background-color:  $bg-color;
+    .cart-wrap{
+        width: 52rem;
+        .cart-step{
+            i{
+                color: #949494;
+            }
+            .active{
+                color: $primary-color !important;
+            }
+            .card{
+                background-color: $bg-color;
+                i{
+                    font-size: 1.75rem;
+                }
+            }
+        }
+        
+        
+    }
+}
+
+.cart-list{
+    background-color: $bg-color;
+    padding-bottom: 7rem;
+    .list-wrap{
+        width: 64rem;
+        .list-layout{
+            background-color: $body-color;
+            width: 100%;
+            .table{
+                font-size: .9rem;
+                width: 100%;
+                .thead{ font-size: .9rem;}
+                .cart-item-name{
+                    max-width: 480px;
+                }
+                
+                .qty-layout{
+                    span{
+                        background-color: $bg-color;
+                        padding: .2rem .6rem;
+                        border-radius: 50%;
+                        cursor: pointer;
+                    }
+                    .num{
+                        background-color: $body-color !important;
+                        border: 1px solid $bg-color-deep;
+                    }
+                    .plus , .minus{
+                        transition: .3s;
+                        &:hover{
+                            color: $title-color-light;
+                            background-color: $primary-color;
+                        }
+                    }
+                    
+                }
+    
+    
+            }
+        }
+    }
+    
+}
+
+// shipping page css start
+.login-form{
+    background-color: $bg-color;
+    .login-form-wrap{
+        width: 33.5rem;
+        background-color: $body-color;
+        button{
+            i{color: $primary-color;}
+        }
+    }
+}
+.shipping{
+    background-color: $bg-color;
+    padding-bottom: 8rem;
+    .shipping-form{
+        background-color: $body-color;
+        // padding: 1rem;
+        
+    }
+}
+// shipping page css end
+
+
+
+// payment page css start
+.payment{
+    background-color: $bg-color;
+    padding-bottom: 8rem;
+    .pay-wrap{ 
+        width: 64rem;
+        
+        .pay-layout{
+            background-color: $body-color;
+            ul{
+                li{
+                    button{color: $primary-color}
+                }
+            }
+            .tab-content{
+                .save-card{
+                    .card-layout{
+                        background-color: $bg-color;
+                        .card-img{
+                            width: 3.5rem;
+                        }
+                    }
+                    .card-form{
+                        .card-design{
+                            .form-check{
+                                margin-right: .5rem;
+                            }
+                            input:checked + .card-label .card-layout{
+                                background-color: $bg-color;
+                                color: $primary-color;
+                                cursor: pointer;
+                                box-shadow: 0 0 0 1px $body-color, 0 0 0 2px $primary-color;
+                            }
+                            .card-label{
+                                border-radius: .2rem;
+                                border: none;
+                                color: $text-color;
+                                width: 28rem;
+                                height: 4.6rem;
+                                align-items: center !important;
+                                margin-left: -1.51rem;
+                                text-align: center;
+                                transition: .3s;
+                                &:hover{
+                                    color: $primary-color;
+                                }
+                                .card-layout{
+                                    margin-top: -.01rem !important;
+                                    width: 99.85% ;
+                                }
+                            }
+                            input{
+                                display: none;
+                            }
+                        }
+                    }
+                    
+                }
+    
+                .add-card{
+                    .add-btn{
+                        border: 1px solid $primary-color !important;
+                    }
+                }
+                .active{
+                    display: block;
+                }
+                .pay-rv-num{
+                    // display: none;
+                }
+                
+            }
+        }
+
+        .coupon-form{
+            background-color: $bg-color;
+            .coupon-form-wrap{
+                width: 100%;
+                background-color: $body-color;
+                i{color: $primary-color}
+            }
+        }
+        
+        .order-sum{
+            background-color: $body-color;
+        }
+    }
+}
+// payment page css end
+
+
+// order confirm css start
+.confirm-list{
+    background-color: $bg-color;
+    padding-bottom: 7rem;
+    .list-wrap{
+        width: 64rem;
+        .list-layout{
+            background-color: $body-color;
+            width: 100%;
+            .order-num{
+                     background-color: $primary-color-light;
+                     font-size: 1.2rem;
+                   }
+            .table{
+                font-size: .9rem;
+                width: 100%;
+                .thead{ font-size: .9rem;}
+                .cart-item-name{
+                    max-width: 480px;
+                }
+                
+                .qty-layout{
+                    span{
+                        background-color: $bg-color;
+                        padding: .2rem .6rem;
+                        border-radius: 50%;
+                        cursor: pointer;
+                    }
+                    .num{
+                        background-color: $body-color !important;
+                        border: 1px solid $bg-color-deep;
+                    }
+                    .plus , .minus{
+                        transition: .3s;
+                        &:hover{
+                            color: $title-color-light;
+                            background-color: $primary-color;
+                        }
+                    }
+                    
+                }
+    
+    
+            }
+        }
+    }
+    
+}
+
+// order confirm css end
+
+
+//media quary start
+@media (max-width: 576px){
+    .my-cart{
+        padding-top: 8rem;
+        .card{
+            background-color: $bg-color;
+            text-align: center;
+            h6{
+                font-size: .87rem !important;
+                margin-top: -.5rem;
+                span{
+                    display: none;
+                }
+            }
+            i{
+                font-size: 1.1rem !important;
+            }
+            p{
+                margin-top: -.1rem;
+            }
+        }
+    }
+
+    .cart-list, .confirm-list{
+        padding-bottom: 3rem;
+        .list-wrap{
+            width: 40rem;
+            .table{
+                font-size: .78rem !important;
+                .qty-layout{
+                    span{
+                        padding: .2rem .45rem !important;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+    .confirm-list{
+        .order-num{
+            font-size: 1rem !important;
+        }
+    }
+
+    .shipping{
+        padding-bottom: 3.5rem;
+    }
+    .shipping , .login-form{
+        font-size: .85rem !important;
+        // padding-bottom: 5rem;
+        input{
+        font-size: .75rem !important;
+        }
+        select{
+        font-size: .75rem !important;
+
+        }
+        h2{
+            button{
+                font-size: .9rem !important;
+            }
+        }
+    }
+
+    .payment{
+        padding-bottom: 3rem;
+        .pay-layout, .coupon-form, .order-sum{
+            font-size: .85rem;
+            h6{font-size: .9rem;}
+            h2{
+                button{font-size: .9rem;}
+            }
+            button{font-size: .85rem !important; }
+            input, select{font-size: .75rem;}
+            ul{
+                li{
+                    font-size: .85rem;
+                }
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 1200px){
+    .my-cart{
+        .card{
+            h6{
+                margin-top: -.25rem;
+            }
+        }
+    }
+
+    .cart-list, .confirm-list{
+        padding-bottom: 3rem;
+        .list-wrap{
+            width: 54rem;
+            .table{
+                font-size: .89rem;
+                .qty-layout{
+                    span{
+                        padding: .16rem .47rem !important;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}

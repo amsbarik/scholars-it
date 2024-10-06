@@ -1,0 +1,108 @@
+@use "../base" as *;
+@use "../partials/variables" as *;
+
+
+// new classes
+.heading-style{
+    color: $heading-color;
+    font-weight: $font-medium;
+}
+
+.title-style{
+    color: $title-color;
+}
+
+.text-style{
+    color: $text-color;
+    // font-size: $text-font-size;
+    // text-align: justify;
+    // text-align-last: left;
+}
+
+.btn{
+    color: $tertiary-color;
+    background-color: $primary-color;
+    border: none;
+    transition: .3s;
+    &:hover {
+        background-color: darken($primary-color, 7%);
+        color: $tertiary-color;
+      }
+}
+
+.btn-outline{
+    background-color: $color-light;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    transition: .4s;
+    &:hover{
+        background-color: darken($primary-color, 7%);
+        color: $color-light;
+    }
+}
+
+.reviews{
+    i{color: $primary-color ; font-size: .75rem;}
+    span{
+        color: $text-color;
+        margin-left: .8rem;
+    }
+}
+
+.link{
+    color: $text-color;
+    transition: .3s;
+    &:hover{
+        color: $primary-color;
+        transform: scale(1.5) !important;
+    }
+}
+
+.color-txt{
+    color: $primary-color;
+}
+
+.u-line{
+    height: 2px;
+    background: $primary-color;
+}
+
+.color-txt{
+    color: $primary-color;
+}
+
+.bg-deep{
+    background-color: $bg-color;
+}
+//////////////////////////////////////
+
+.see-more{
+    color: $primary-color;
+    margin-bottom: $space-title-md;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+
+
+.box-shadow{
+    box-shadow: 1px 1px 5px #c9c7c7;
+}
+
+
+
+
+.likes{ 
+    color: $text-color;
+    color: $primary-color;
+    padding-right: $padding-min-extra
+    }
+.reviews{
+    color: $text-color;
+    color: $primary-color;
+    // font-size: $text-extra-small
+    }
+
+
+

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap link-->
+    
+    <!-- custom css link-->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!--font-awesome lik-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!--slick css link-->
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/> -->
+    <!-- slick-theme.css- the default styling -->
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
+
+
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+
+    <title>About Us | Scholar's IT</title>
+</head>
+<body>
+  <!--Main Navigation start-->
+  <header>
+    <!-- Navbar top start-->
+    <nav class="navbar bg-body-tertiary navbar-expand-lg shadow-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" ><img src="img/scholar-it-logo.png" class="object-fit-cover brand-logo" style="height: 65px;" alt="logo"></a>
+        <button  class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="search ">
+              <form action="" role="search">
+                <div class="input-group ">
+                  <input type="search" placeholder="Search" aria-label="Search" class="form-control"  aria-describedby="search-btn">
+                  <button class="btn btn-outline-secondary" type="button" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+              </form>
+            </div>
+            <ul class="navbar-nav justify-content-end  flex-grow-1 pe-3">
+              <li class="nav-item"><a class="nav-link " aria-current="page" href="courses.html">Courses</a></li>
+              <li class="nav-item"><a class="nav-link " href="events.html">Events</a></li>
+              <li class="nav-item"><a class="nav-link " href="community.html">Community</a></li>
+              <li class="nav-item"><a class="nav-link active" href="aboutUs.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link " href="admission.html">Admmision</a></li>
+              <li class="nav-item ms-xl-5 ms-md-3 singin"><a class="nav-link btn text-white px-3" href="singin.html">Sign In</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar top end-->
+
+    <!-- nav bottom start  -->
+    <nav id="nav-bottom" class="fixed-bottom bg-white nav-bottom" >
+      
+      <div class="container">
+        
+        <div class=" " >
+          <ul class="d-flex justify-content-between " >
+            <li class="nav-item">
+              <a class="nav-link nav-link-sm text-center " aria-current="page" href="index.html"><i class="fa-solid fa-house"></i><span class="d-block">Home</span></a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link nav-link-sm" href="courses.html"><i class="fa-solid fa-graduation-cap"></i><span class="d-block">Cource</span></a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link nav-link-sm " href="community.html"><i class="fa-solid fa-user-group ms-3"></i><span class="d-block">Community</span></a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link nav-link-sm " href="events.html"><i class="fa-regular fa-calendar-check"></i><span class="d-block">Event</span></a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link nav-link-sm "  href="userProfile.html"><i class="fa-solid fa-user" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"></i><span class="d-block">Profile</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav bottom end  -->
+
+    <!--user Sidebar start-->
+    <!-- <nav id="sidebarMenu" class=" d-lg-block sidebar collapse">
+        <div class="position-sticky">
+            <div class="list-group list-group-flush  mt-4">
+                <div>
+                    <div class="user-photo mx-auto text-center mt-4 mb-md-5 p-3">
+                      <img src="image/profile-1.jpg" class="img-fluid rounded-circle object-fit-cover" alt="">
+                      <h5 class="text-center mt-3">Mr Jhon</h5>
+                      <p class="text-center"><small>hello@gmail.com</small></p>
+                      
+                    </div>
+                  </div>
+                  <hr class="text-light m-0 mt-4 p-0">
+
+                <a href="userProfile.html" class="nav-item  py-2 mt-3 active"><i class="fa-solid fa-chart-line   me-3"></i><span>Dashboard</span></a>
+                <a href="myOrders.html" class=" nav-item  py-2 "><i class="fa-solid fa-clock-rotate-left me-3"></i><span>My Orders</span></a>
+                <a href="myWishlist.html" class=" nav-item  py-2 "><i class="fa-regular fa-heart me-3"></i><span>My Wishlist</span></a>
+                <a href="profileSetting.html" class=" nav-item  py-2 "><i class="fa-regular fa-circle-user me-3"></i><span>My Setting</span></a>
+                <a href="index.html" class=" nav-item  py-2 "><i class="fa-solid fa-power-off me-3"></i><span>Logout</span></a>
+            </div>
+        </div>
+    </nav> -->
+    
+    <!--user Sidebar end-->
+  </header>
+  <!--Main Navigation end-->
+
+  <!--start main-->
+  <main> 
+    <!-- go to top with scroll start -->
+    <div id="progress" class="progress">
+      <span id="progress-value" class="progress-value">&#x1F815;</span>
+    </div>
+    <!-- go to top with scroll start -->
+
+    <!-- join free seminar start -->
+    <div>
+      <a href="freeSeminar.html" class="join-free-btn py-0 py-xl-1 px-2 pb-2  z-3 rounded-top">Join Free Seminar</a>
+    </div>
+    <!-- join free seminar end -->
+
+    <!--top cover start -->
+    <section class="admission-cover ">
+        <div class="container">
+            <div class="admission-wrap d-flex align-items-center">
+                <div class="">
+                    <h1>Scholar’s IT Institute</h1>
+                    <p class="mt-3">Grow with Skills and build your career with Scholar’s IT.</p>
+                    <div class="mt-5 d-flex">
+                        <p><i class="fa-solid fa-location-dot me-2"></i>Malibgh, Dhaka.</p>
+                        <span><i class="fa-regular fa-calendar-check me-2 ms-4 ms-md-5"></i>Since 2019</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+     <!--top cover end -->
+
+    <!-- mission start  -->
+    <section class="mission">
+        <div class="container">
+            <div class="mission-wrap">
+                <h2 class="heading-style text-center">Scholar’s IT</h2>
+                <p class="text-center text-style mt-1 mt-md-4">Lorem ipsum dolor sit amet consectetur</p>
+                <div class="row row-cols-1 row-cols-lg-2 mt-3 mt-md-4 mt-lg-5">
+                    <div class="col">
+                        <div class="card  shadow border border-opacity-10 mb-3">
+                            <div class="row g-0">
+                              <div class="col-sm-4 ">
+                                <div class="d-flex card-img justify-content-center align-items-center" style="height: 100%;">
+                                    <img src="img/icons/mission.png" class="img-fluid rounded-start" alt="...">
+                                </div>
+                              </div>
+                              <div class="col-sm-8">
+                                <div class="card-body">
+                                  <h5 class="card-title title-style">Mission</h5>
+                                  <p class="card-text text-style ">Lorem ipsum dolor,  sit amet consectetur adipisicing elit. sit amet consectetur adipisicing elit. Ut odit nemo incidunt, est commodi sit tempora saepe beatae ab accusamus.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card  shadow border border-opacity-10 mb-3">
+                            <div class="row g-0">
+                              <div class="col-sm-4 ">
+                                <div class="d-flex card-img justify-content-center align-items-center" style="height: 100%;">
+                                    <img src="img/icons/vission.png" class="img-fluid rounded-start" alt="...">
+                                </div>
+                              </div>
+                              <div class="col-sm-8">
+                                <div class="card-body">
+                                  <h5 class="card-title title-style">Mission</h5>
+                                  <p class="card-text text-style ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. sit amet consectetur adipisicing elit. Ut odit nemo incidunt, est commodi sit tempora saepe beatae ab accusamus.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- mission end -->
+
+    <!-- why best start -->
+    <section class="why-best">
+        <div class="container">
+            <div class="why-wrap">
+                <h3 class="heading-style text-center">Why We are Best?</h3>
+                <p class="text-center text-style mt-1 mt-md-4">Lorem ipsum dolor sit amet consectetur</p>
+                <div class="d-md-flex justify-content-evenly mt-4 mt-md-5">
+                    <div class="">
+                        <ul>
+                            <li><i class="fa-regular fa-square-check me-3"></i>We have 4 years experiece with successful.</li>
+                            <li><i class="fa-regular fa-square-check me-3"></i>We have 4 years experiece with successful.</li>
+                            <li><i class="fa-regular fa-square-check me-3"></i>We have 4 years experiece with successful.</li>
+                            <li><i class="fa-regular fa-square-check me-3"></i>We have 4 years experiece with successful.</li>
+                            <li><i class="fa-regular fa-square-check me-3"></i>We have 4 years experiece with successful.</li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <ul>
+                            <li><i class="fa-regular fa-square-check me-3"></i>We have 4 years experiece with successful.</li>
+                            <li><i class="fa-regular fa-square-check me-3"></i>We have 4 years experiece with successful.</li>
+                            <li><i class="fa-regular fa-square-check me-3"></i>We have 4 years experiece with successful.</li>
+                            <li><i class="fa-regular fa-square-check me-3"></i>We have 4 years experiece with successful.</li>
+                            <li><i class="fa-regular fa-square-check me-3"></i>We have 4 years experiece with successful.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- why best end -->
+
+    <!-- office start  -->
+    <section class="office">
+        <div class="container">
+            <div class="office-wrap p-2 rounded-4">
+                <div class="office-view rounded-4 p-1">
+                    <div class="card rounded-4 overflow-hidden border-0">
+                        <img src="img/office-view.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay p-0 pt-4">
+                          <div class="title p-2 p-md-3 pb-1 pb-md-2 bg-opacity-75 bg-white rounded-end"><h5 class="card-title title-style">Scholar’s IT Office</h5></div>
+                          <div class="move">
+                            <button class="border-0 rounded-circle mb-4 p-2 ">
+                                <img src="img/icons/compass.png" class=" compass img-fluid" alt="...">
+                            </button>
+                            <div class="zoom rounded text-center">
+                                <button class="border-0 px-3 py-2 rounded-top d-block"><i class="fa-solid fa-plus"></i></button>
+                                <button class="border-0 px-3 py-2 pt-0 rounded-bottom"><i class="fa-solid fa-minus"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- office end -->
+
+    <!-- success  start  -->
+    <section class="success">
+        <div class="container">
+            <div class="success-wrap">
+            <div class="row row-cols-1 row-cols-lg-2 g-0 ">
+                <div class="col">
+                    <div class="d-flex align-items-center success-txt-bg">
+                        <div class="success-txt pe-4">
+                            <h4 class="text-white">4 Years of Success</h4>
+                            <p class="mt-lg-3 text-white">Learn Something New Everyday with Scholar IT. Sed quisquam nobis numquam vitae eaque nostrum!</p>
+                            <a href="#"><button class="btn mt-3 mt-lg-5  border-0">Get Started </button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    
+                </div>
+            </div>
+                
+            </div>
+        </div>
+        <div class=" overflow-hidden">
+        <img src="img/success-cover.jpg" class="success-img object-fit-cover" alt="">
+        </div>
+    </section>
+    <!-- success  end -->
+
+ 
+  
+    <!-- team start  -->
+  <section class="team">
+    <div class="container">
+        <div class="team-wrap">
+          <h3 class="text-center heading-style text-capitalize">Our Professional Team</h3>
+          <p class="text-center text-style mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit unde quas suscipit?</p>
+            <div class="row g-3 g-lg-4 mt-3 mt-lg-4 row-cols-2 row-cols-md-3 row-cols-lg-4">
+              <div class="col">
+                <div class="card border-0 shadow">
+                    <img src="img/spkr-cover-1.jpg" class="card-img-top " alt="...">
+                    <div class="card-body ">
+                        <div class="text-center  mt-4">
+                            <img src="img/profile-1.jpg" class="spkr-photo object-fit-cover rounded-circle" alt="...">
+                          </div>
+                      <h5 class="card-title text-center mt-2 mt-lg-3">Mr. Jhone Dhoe</h5>
+                      <p class="card-text text-center">Digital Marketer</p>
+                      <div class="d-flex justify-content-center">
+                        <div class="d-flex justify-content-around ins-social mt-2 mb-2">
+                          <a href="#" class=""><i class="fa-brands fa-square-facebook"></i></a>
+                          <a href="#" class="rounded-1"><i class="fa-brands fa-square-twitter"></i></a>
+                          <a href="#" class="rounded-1"><i class="fa-brands fa-square-instagram"></i></a>
+                          <a href="#" class="rounded-1"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="col">
+                <div class="card border-0 shadow">
+                    <img src="img/spkr-cover-1.jpg" class="card-img-top " alt="...">
+                    <div class="card-body ">
+                        <div class="text-center  mt-4">
+                            <img src="img/profile-1.jpg" class="spkr-photo object-fit-cover rounded-circle" alt="...">
+                          </div>
+                      <h5 class="card-title text-center mt-2 mt-lg-3">Mr. Jhone Dhoe</h5>
+                      <p class="card-text text-center">Digital Marketer</p>
+                      <div class="d-flex justify-content-center">
+                        <div class="d-flex justify-content-around ins-social mt-2 mb-2">
+                          <a href="#" class=""><i class="fa-brands fa-square-facebook"></i></a>
+                          <a href="#" class="rounded-1"><i class="fa-brands fa-square-twitter"></i></a>
+                          <a href="#" class="rounded-1"><i class="fa-brands fa-square-instagram"></i></a>
+                          <a href="#" class="rounded-1"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="col">
+                <div class="card border-0 shadow">
+                    <img src="img/spkr-cover-1.jpg" class="card-img-top " alt="...">
+                    <div class="card-body ">
+                        <div class="text-center  mt-4">
+                            <img src="img/profile-1.jpg" class="spkr-photo object-fit-cover rounded-circle" alt="...">
+                          </div>
+                      <h5 class="card-title text-center mt-2 mt-lg-3">Mr. Jhone Dhoe</h5>
+                      <p class="card-text text-center">Digital Marketer</p>
+                      <div class="d-flex justify-content-center">
+                        <div class="d-flex justify-content-around ins-social mt-2 mb-2">
+                          <a href="#" class=""><i class="fa-brands fa-square-facebook"></i></a>
+                          <a href="#" class="rounded-1"><i class="fa-brands fa-square-twitter"></i></a>
+                          <a href="#" class="rounded-1"><i class="fa-brands fa-square-instagram"></i></a>
+                          <a href="#" class="rounded-1"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="col">
+                <div class="card border-0 shadow">
+                    <img src="img/spkr-cover-1.jpg" class="card-img-top " alt="...">
+                    <div class="card-body ">
+                        <div class="text-center  mt-4">
+                            <img src="img/profile-1.jpg" class="spkr-photo object-fit-cover rounded-circle" alt="...">
+                          </div>
+                      <h5 class="card-title text-center mt-2 mt-lg-3">Mr. Jhone Dhoe</h5>
+                      <p class="card-text text-center">Digital Marketer</p>
+                      <div class="d-flex justify-content-center">
+                        <div class="d-flex justify-content-around ins-social mt-2 mb-2">
+                          <a href="#" class=""><i class="fa-brands fa-square-facebook"></i></a>
+                          <a href="#" class="rounded-1"><i class="fa-brands fa-square-twitter"></i></a>
+                          <a href="#" class="rounded-1"><i class="fa-brands fa-square-instagram"></i></a>
+                          <a href="#" class="rounded-1"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="col">
+                <div class="card border-0 shadow">
+                    <img src="img/spkr-cover-1.jpg" class="card-img-top " alt="...">
+                    <div class="card-body ">
+                        <div class="text-center  mt-4">
+                            <img src="img/profile-1.jpg" class="spkr-photo object-fit-cover rounded-circle" alt="...">
+                          </div>
+                      <h5 class="card-title text-center mt-2 mt-lg-3">Mr. Jhone Dhoe</h5>
+                      <p class="card-text text-center">Digital Marketer</p>
+                      <div class="d-flex justify-content-center">
+                        <div class="d-flex justify-content-around ins-social mt-2 mb-2">
+                          <a href="#" class=""><i class="fa-brands fa-square-facebook"></i></a>
+                          <a href="#" class="rounded-1"><i class="fa-brands fa-square-twitter"></i></a>
+                          <a href="#" class="rounded-1"><i class="fa-brands fa-square-instagram"></i></a>
+                          <a href="#" class="rounded-1"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="col">
+                <div class="card border-0 shadow">
+                    <img src="img/spkr-cover-1.jpg" class="card-img-top " alt="...">
+                    <div class="card-body ">
+                        <div class="text-center  mt-4">
+                            <img src="img/profile-1.jpg" class="spkr-photo object-fit-cover rounded-circle" alt="...">
+                          </div>
+                      <h5 class="card-title text-center mt-2 mt-lg-3">Mr. Jhone Dhoe</h5>
+                      <p class="card-text text-center">Digital Marketer</p>
+                      <div class="d-flex justify-content-center">
+                        <div class="d-flex justify-content-around ins-social mt-2 mb-2">
+                          <a href="#" class=""><i class="fa-brands fa-square-facebook"></i></a>
+                          <a href="#" class="rounded-1"><i class="fa-brands fa-square-twitter"></i></a>
+                          <a href="#" class="rounded-1"><i class="fa-brands fa-square-instagram"></i></a>
+                          <a href="#" class="rounded-1"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="col">
+                <div class="card border-0 shadow">
+                    <img src="img/spkr-cover-1.jpg" class="card-img-top " alt="...">
+                    <div class="card-body ">
+                        <div class="text-center  mt-4">
+                            <img src="img/profile-1.jpg" class="spkr-photo object-fit-cover rounded-circle" alt="...">
+                          </div>
+                      <h5 class="card-title text-center mt-2 mt-lg-3">Mr. Jhone Dhoe</h5>
+                      <p class="card-text text-center">Digital Marketer</p>
+                      <div class="d-flex justify-content-center">
+                        <div class="d-flex justify-content-around ins-social mt-2 mb-2">
+                          <a href="#" class=""><i class="fa-brands fa-square-facebook"></i></a>
+                          <a href="#" class="rounded-1"><i class="fa-brands fa-square-twitter"></i></a>
+                          <a href="#" class="rounded-1"><i class="fa-brands fa-square-instagram"></i></a>
+                          <a href="#" class="rounded-1"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="col">
+                <div class="card border-0 shadow">
+                    <img src="img/spkr-cover-1.jpg" class="card-img-top " alt="...">
+                    <div class="card-body ">
+                        <div class="text-center  mt-4">
+                            <img src="img/profile-1.jpg" class="spkr-photo object-fit-cover rounded-circle" alt="...">
+                          </div>
+                      <h5 class="card-title text-center mt-2 mt-lg-3">Mr. Jhone Dhoe</h5>
+                      <p class="card-text text-center">Digital Marketer</p>
+                      <div class="d-flex justify-content-center">
+                        <div class="d-flex justify-content-around ins-social mt-2 mb-2">
+                          <a href="#" class=""><i class="fa-brands fa-square-facebook"></i></a>
+                          <a href="#" class="rounded-1"><i class="fa-brands fa-square-twitter"></i></a>
+                          <a href="#" class="rounded-1"><i class="fa-brands fa-square-instagram"></i></a>
+                          <a href="#" class="rounded-1"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+            </div>
+        </div>
+
+    </div>
+  </section>
+  <!-- team end -->
+  
+    <!--footer start-->
+    <section id="footer" class="footer">
+      <div class="container">
+        <div class="footer-wrapping ">
+            <div class="row row-cols-2 row-cols-md-4 row-cols-lg-4 gy-4 ">
+
+                <div class="boxiew col">
+                    <div class="logo" style="width:120px">
+                      <img src="img/scholar-it-logo-light.png" class="img-fluid" alt="Scholar's IT logo">
+                    </div>
+        
+                    <div class="contact-info">
+                      
+                      <div class="mb-2"><a href="Tel: 123-456-7890"><i class="fa-solid fa-phone"></i>+88 01721-XXXXXX</a></div>
+                      <div class="mb-2"><a href="mailto:hello@scholarsit.com"><i class="fa-solid fa-envelope"></i>hello@scholarsit.com</a></div>
+                      <div><a href="#"><i class="pt-1 fa-sharp fa-solid fa-location-dot"></i>Feroza Tower, 8th Floor, DIT Road, Malibagh Chowdhurypara, Dhaka.</a> </div>
+                      
+                    </div>
+                </div>
+
+                <div class="quick-link col">
+                    <div><h5>Quick Link</h5></div>
+                    <div class="info-link">
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>About Us</a></div>
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Privacy Policy</a></div>
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Terms & Conditions</a></div>
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Community Standard</a></div>
+                    </div>
+                </div>
+
+                <div class="course-link col">
+                  <div><h5>Our Cources</h5></div>
+                  <div class="info-link">
+                    <div><a href="#"><i class="fa-solid fa-angle-right"></i>Digital Marketing</a></div>
+                    <div><a href="#"><i class="fa-solid fa-angle-right"></i>Graphic Design</a></div>
+                    <div><a href="#"><i class="fa-solid fa-angle-right"></i>Web Design</a></div>
+                    <div><a href="#"><i class="fa-solid fa-angle-right"></i>Web Development</a></div>
+                  </div>
+                </div>
+        
+                <div class="boxiew-link col">
+                    <div><h5>Get Started</h5></div>
+                    <div class="info-link">
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Admmision</a></div>
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Community</a></div>
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Join timelines</a></div>
+                      <div><a href="#"><i class="fa-solid fa-angle-right"></i>Join Free Seminer</a></div>
+                    </div>
+        
+                    <div class="follow-us ">
+                      <div><h5>Follow Us</h5></div>
+                      <div class="social-link">
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+        <div class="copy-right d-flex justify-content-center pb-3"> <small>Copyright © 2023 Scholar's IT || All right reserved</small></div>
+      </div>
+
+    </section>
+    <!--footer end-->
+
+  </main>
+  <!--end main-->
+
+
+
+    <!--custom js link-->
+    <script src="js/main.js"></script>
+
+    <!--Bootstrap link-->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+
+    <!--slick js link-->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+      
+
+    <script src="js/jquery_3.7.0_jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+
+
+    </body>
+</html>
