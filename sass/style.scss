@@ -178,25 +178,71 @@
 
 
 // home cover css start
+.top-slider{ height: 40rem;}
 .home-cover{
   margin-top: $space-sec-top;
-  background-image: url(../img/course-cover.jpg);
-  height: 30rem;
-  background-size: cover;
-  background-repeat: no-repeat;
-  .container{
-    height: 100%;
-    .top-cover-wrap{
-      height: 100%;
-      h1{
-      //   font-weight: $font-bold;
-        color: $primary-color;
-      }
-      .certify{
-          color: $primary-color;
-      }
+  .top-slider{
+   
+    .carousel-inner{
+        height: 100%;
+        .carousel-item{
+            height: 100%;
+            .cover-photo{
+                height: 100%;
+                object-fit: cover;
+            }
+            .carousel-content{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                
+                h1{
+                    color: $primary-color;
+                  }
+                  .certify{
+                      color: $primary-color;
+                  }
+                }
+            }
+        }
     }
-  }
+  
+}
+
+
+@media (max-width: 1700px) {
+    .top-slider{ height: 577px;}
+}
+@media (max-width: 1600px) {
+    .top-slider{ height: 543px;}
+}
+@media (max-width: 1500px) {
+    .top-slider{ height: 509px;}
+}
+@media (max-width: 1600px) {
+    .top-slider{ height: 509px;}
+}
+@media (max-width: 1500px) {
+    .top-slider{ height: 475px;}
+}
+@media (max-width: 1400px) {
+    .top-slider{ height: 441px;}
+}
+@media (max-width: 1300px) {
+    .top-slider{ height: 407px;}
+}
+@media (max-width: 1200px) {
+    .top-slider{ height: 373px;}
+}
+@media (max-width: 1100px) {
+    .top-slider{ height: 339px;}
+}
+@media (max-width: 1000px) {
+    .top-slider{ height: 305px;}
+}
+@media (max-width: 576px) {
+    .top-slider{ height: 200px;
+    }
 }
 
 // home cover css end
@@ -399,7 +445,6 @@
 @media (max-width: 576px){
   
   .home-cover{
-    height: 9rem;
     margin-top: 4.2rem;
     .join{
       display: none;
@@ -446,7 +491,6 @@
 @media (max-width: 768px){
   .home-cover{
     margin-top: 4.2rem ;
-    height: 11rem !important;
     .review{
       display: none !important;
     }
@@ -469,9 +513,7 @@
 }
 
 @media (max-width: 992px){
-  .home-cover{
-    height: 16rem;
-  }
+
   
   .seminer{
     .card{
@@ -495,12 +537,7 @@
   }
 }
 
-@media (max-width: 1200px){
-  .home-cover{
-    height: 20rem;
-  }
-  
-}
+
 
 @media (max-width: 1400px){
   .seminer{
@@ -515,37 +552,14 @@
 
 // media query for responsive end
 
-
-// test
-.slick-slide {
-    // margin: 0 10px;
-  }
-  
-  .slick-list {
-    // margin: 0 -10px;
-  }
-  
-  .test {
-    // position: relative;
-  }
   
   .trend-course-slide .slick-prev {
     background-color: #00A884;
-    // color: red !important;
-    // margin-top: -20px;
-    // position: absolute;
-    // top: 0;
-    // left: 95%;
   }
 
 
   .trend-course-slide .slick-next {
     background-color: #00A884 !important;
-    // color: red !important;
-    // margin-top: -20px;
-   
-    // position: absolute;
-    // top: 0;
   }
   
   .trend-course-slide .slick-prev:hover {
@@ -559,16 +573,6 @@
   }
 
 
-//   @media (max-width: 576px) {
-//     .slick-prev {
-//       left: 85% !important;
-//     }
-//     .slick-next {
-//       left: 93%;
-//     }
-
-// }
-///test  
 
 
 
