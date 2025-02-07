@@ -1,0 +1,110 @@
+@use "../partials/index" as *;
+@use "../base/index" as *;
+
+
+
+
+
+
+
+.course-info{
+
+
+
+
+    .course-features{
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px; /* Adjust spacing between columns */
+
+            .feature-card {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 8px 18px;
+                text-align: center;
+                border-radius: 8px;
+                width: auto; /* Automatically adjusts to content */
+                white-space: nowrap; /* Prevents text wrapping */
+
+                .icons{
+                    width: 24px;
+                    height: 24px;
+                    object-fit: contain;
+                }
+                .features{
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $secondary-color;
+                    margin-top: 1px;
+                }
+            }
+
+            $colors: $color-v1 $color-v2 $color-v3 $color-v4; // Define your colors
+            $color-count: length($colors); // Get total colors count
+
+            // Loop through feature-card elements and apply colors cyclically
+            @for $i from 1 through 20 { // Adjust range if you expect more cards
+                .feature-card:nth-child(#{$i}) {
+                    background: nth($colors, (($i - 1) % $color-count) + 1);
+                }
+            }
+        }
+    
+    }
+
+
+}
+
+
+.course-curriculum{
+    .accordion{
+        .row{
+            .accordion-item{
+                .accordion-header{
+
+                }
+
+                .accordion-body{
+                    .class{
+                        margin-bottom: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// .accordion-container {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+//     gap: 16px; /* Space between items */
+//   }
+  
+//   /* Responsive: One column on smaller screens */
+//   @media (max-width: 768px) {
+//     .accordion-container {
+//       grid-template-columns: 1fr; /* Change to one column */
+//     }
+//   }
+
+
+.tools-learn{
+    .row{
+        .tool-card{
+            background: #ddd;
+            .tool-icon{
+                width: 30px;
+                height: 30px;
+                object-fit: contain;
+                
+            }
+            .title{
+                padding: 0px 10px 0 4px;
+            }
+        }
+    }
+}
+  

@@ -8,8 +8,15 @@
     font-weight: $font-medium;
 }
 
+.section-padding{
+    padding: 64px 0;
+}
 .title-style{
     color: $title-color;
+}
+
+.title{
+    font-size: 16px;
 }
 
 .text-style{
